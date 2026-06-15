@@ -131,7 +131,7 @@
     "id": "nomads",
     "category": "design",
     "layout": "normal",
-    "img": "images/BPB/Cover.Webp",
+    "img": "images/BPB/Cover.webp",
     "imgPos": "center",
     "cat": "Game UI / UX Design",
     "name": "Backpack Battle: Nomads",
