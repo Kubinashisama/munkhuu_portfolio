@@ -402,7 +402,7 @@
         "fit": "contain"
       },
       {
-        "src": "images/BPB/02_Hero_selection.webp",
+        "src": "images/BPB/02_Hero_Selection.webp",
         "ph": "Characters",
         "ratio": "9/16",
         "fit": "contain"
@@ -486,7 +486,7 @@
     "heroImg": null,
     "heroVideo": "https://res.cloudinary.com/dfruixbep/video/upload/v1781515183/BPB_awbmne.mp4",
     "heroHeight": "100%"
-  },
+    },
 
   "poster": {
     "id": "poster",

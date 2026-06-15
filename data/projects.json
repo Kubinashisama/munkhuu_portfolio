@@ -27,7 +27,7 @@
     "tags": [
       "Blender",
       "Character",
-      "2023"
+      "2022"
     ],
     "group": "personal"
   },
@@ -39,11 +39,11 @@
     "imgPos": "center",
     "cat": "3D Environment",
     "name": "Low Poly Pokémon City",
-    "desc": "Pokemon low poly хот — building, vegetation, isometric lighting.",
+    "desc": "Pokemon анимешний дүр болон орчинг дуурайлган хийх гэж оролдсон fanart",
     "tags": [
       "Blender",
       "Low Poly",
-      "2022"
+      "2023"
     ],
     "group": "personal"
   },
@@ -55,7 +55,7 @@
     "imgPos": "center",
     "cat": "3D Character Design",
     "name": "Anubis 2077",
-    "desc": "Cyberpunk дэлхийд тохируулсан Anubis хуяг.",
+    "desc": "Cyberpunk хотын орчин хийж дүр хөлөлгөх дадлага.",
     "tags": [
       "Blender",
       "Character",
@@ -71,11 +71,11 @@
     "imgPos": "center",
     "cat": "2D Illustration · Fan Art",
     "name": "XLR8 — Ben 10",
-    "desc": "Постер хэлбэрт 2D digital illustration.",
+    "desc": "Ben 10 анимешний XLR8 дүрд зориулж хийсэн Illustration.",
     "tags": [
       "Photoshop",
       "Illustration",
-      "2022"
+      "2024"
     ],
     "group": "personal"
   },
@@ -87,7 +87,7 @@
     "imgPos": "center",
     "cat": "Brand Identity",
     "name": "Өвөрхангай Аймаг Brandbook",
-    "desc": "Бүрэн брэнд систем — лого, өнгийн палитр, typography, pattern.",
+    "desc": "Өвөрхангай аймагт зориулж хийсэн Brandbook.",
     "tags": [
       "Adobe Illustrator",
       "Brand Identity",
@@ -119,7 +119,7 @@
     "imgPos": "center top",
     "cat": "Infographic Design",
     "name": "Монголын Цахим Спорт",
-    "desc": "Монгол e-sports ололт амжилтуудын data visualization.",
+    "desc": "Монгол e-sports ололт амжилтуудын infographic poster.",
     "tags": [
       "Illustrator",
       "Infographic",
@@ -131,15 +131,15 @@
     "id": "nomads",
     "category": "design",
     "layout": "normal",
-    "img": "images/BPB/Cover.webp",
+    "img": "images/BPB/Cover.Webp",
     "imgPos": "center",
     "cat": "Game UI / UX Design",
     "name": "Backpack Battle: Nomads",
-    "desc": "18 дэлгэц, нэгдмэл visual language, монгол өнгийн палитр.",
+    "desc": "Монгол агуулгатай 2D auto-battle strategy тоглоом.",
     "tags": [
       "Figma",
       "Game UI",
-      "2022"
+      "2024"
     ],
     "group": "personal"
   },
@@ -151,7 +151,7 @@
     "imgPos": "center",
     "cat": "Editorial Design",
     "name": "Цус Ойртолт",
-    "desc": "Цусан хамаатны харилцааны тухай editorial постер.",
+    "desc": "Цусан ойртолтын талаарх infographic.",
     "tags": [
       "Photoshop",
       "Typography",
@@ -167,7 +167,7 @@
     "imgPos": "center",
     "cat": "VFX · Rotoscoping",
     "name": "Цөвүүн Цаг МУСК",
-    "desc": "Монгол кино — post-production rotoscoping.",
+    "desc": "Монгол кино — post-production rotoscoping ажилбар.",
     "tags": [
       "After Effects",
       "Rotoscoping",
@@ -183,7 +183,7 @@
     "imgPos": "center",
     "cat": "VFX · Rotoscoping",
     "name": "Хийморьтой Наадам TVC",
-    "desc": "Rio Tinto Naadam 2025-ын post-production үйл явцад rotoscoping чиглэлд оролцсон.",
+    "desc": "Rio Tinto Naadam 2025-ын post-production үйл явцад rotoscoping ажилбарт оролцсон.",
     "tags": [
       "After Effects",
       "Rotoscoping",
@@ -199,7 +199,7 @@
     "imgPos": "center",
     "cat": "VFX · Rotoscoping",
     "name": "Халуун Бороо МУСК",
-    "desc": "Монгол кино — post-production rotoscoping.",
+    "desc": "Монгол кино — post-production rotoscoping ажилбарт оролцсон.",
     "tags": [
       "After Effects",
       "Rotoscoping",
@@ -215,7 +215,7 @@
     "imgPos": "center",
     "cat": "VFX · Rotoscoping",
     "name": "Өв соёл эрхэм Наадам TVC",
-    "desc": "Teso Naadam 2025-ын post-production үйл явцад rotoscoping чиглэлд оролцсон.",
+    "desc": "Teso Naadam 2025-ын post-production үйл явцад rotoscoping болон composition ажилбарт оролцсон.",
     "tags": [
       "After Effects",
       "Rotoscoping",
@@ -247,7 +247,7 @@
     "imgPos": "center",
     "cat": "VFX · Rotoscoping/Compositing",
     "name": "Pearl of the Taiga",
-    "desc": "Pearl of the Taiga усны TVC бичлэнт rotoscoping болон compositing ажилбарт оролцсон.",
+    "desc": "Pearl on the Taiga усны TVC бичлэнт rotoscoping болон compositing ажилбарт оролцсон.",
     "tags": [
       "After Effects",
       "Nuke",
@@ -262,9 +262,9 @@
     "layout": "normal",
     "img": "images/Tobibi_Christmas/Tobibi_Christmas.webp",
     "imgPos": "center",
-    "cat": "Character Modeling",
+    "cat": "3D Environment",
     "name": "Tobibi — Character",
-    "desc": "Хүүхдийн cartoon дүрийн 3D character modeling.",
+    "desc": "Хүүхдийн cartoon цувралын шинэ жилийн мэндчилгээнд зориулж 3D орчин хийсэн.",
     "tags": [
       "Blender",
       "Character",
@@ -296,7 +296,7 @@
     "imgPos": "center",
     "cat": "Commercial · Character Design",
     "name": "Champ — Panda Mascot",
-    "desc": "Хүүхдийн ханиадны syrup-ийн брэндийн дүр.",
+    "desc": "Хүүхдийн ханиадны syrup-ийн брэндийн дүрийг 3D орчинд амьлуулсан.",
     "tags": [
       "Blender",
       "Commercial",
