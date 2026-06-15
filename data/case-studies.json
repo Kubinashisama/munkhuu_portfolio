@@ -1,0 +1,857 @@
+{
+  "hollow": {
+    "id": "hollow",
+    "overview": "Hollow Knight тоглооны 2D flat graphic хэлбэрийг 3D ертөнцөд амьлуулан бүтээсэн Fanart бүтээл.",
+    "process": "Тоглооны cover зурагнаас иш татан дүрийн pose болон орчинг бэлдэж, texture projection арга ашиглаж орчны texture өгсөн. Rim light + volumetric glow-аар atmospheric мэдрэмж бий болгон particle system нэмсэн.",
+    "gallery": [
+      {
+        "src": "images/Hollow_Knight/01_Wireframe.webp",
+        "ph": "Wireframe",
+        "ratio": "3/4"
+      },
+      {
+        "src": "images/Hollow_Knight/02_Solid.webp",
+        "ph": "Solid",
+        "ratio": "3/4"
+      },
+      {
+        "src": "images/Hollow_Knight/03_Material.webp",
+        "ph": "Material",
+        "ratio": "3/4"
+      },
+      {
+        "src": "images/Hollow_Knight/04_Final.webp",
+        "ph": "Final render",
+        "ratio": "3/4"
+      }
+    ],
+    "cols": 1,
+    "note": null,
+    "heroGrad": "g-hollow",
+    "heroImg": null,
+    "heroVideo": "https://res.cloudinary.com/dfruixbep/video/upload/v1781478885/Hollow_Knight_cvycg1.mp4",
+    "heroHeight": "1000px"
+},
+
+  "lanaya": {
+    "id": "lanaya",
+    "overview": "2-р курсд 3D Graphics хичээлийн хүрээнд Dota 2-ийн Templar Assassin дүрийг дуурайлган Maya дээр 3D болгосон fanart.",
+    "process": "Character detail-ийг game model reference-аас авч pose хийсэн. Pentagram emissive shader + particle star system цогцлоосон.",
+    "gallery": [
+      {
+        "src": "images/Templar_Assassin/01_Wireframe.webp",
+        "ph": "Wireframe",
+        "ratio": "4/3",
+        "fit": "contain"
+      },
+      {
+        "src": "images/Templar_Assassin/02_Solid.webp",
+        "ph": "Solid",
+        "ratio": "4/3",
+        "fit": "contain"
+      },
+      {
+        "src": "images/Templar_Assassin/03_Material.webp",
+        "ph": "Material",
+        "ratio": "4/3",
+        "fit": "contain"
+      },
+      {
+        "src": "images/Templar_Assassin/04_Render.webp",
+        "ph": "Final render",
+        "ratio": "4/3",
+        "fit": "contain"
+      }
+    ],
+    "cols": 1,
+    "note": null,
+    "heroGrad": "g-lanaya",
+    "heroImg": null,
+    "heroVideo": "https://res.cloudinary.com/dfruixbep/video/upload/v1781478880/Templar_Assassin_j80vof.mp4",
+    "heroHeight": "500px"
+  },
+
+  "pokecity": {
+    "id": "pokecity",
+    "overview": "Pokémon тоглооны хотыг low poly хэлбэрт дахин хийсэн хувийн бүтэел. Building, мод, зам, өдрийн гэрэлтүүлэг бүхий isometric орчин.",
+    "process": "Flat shading + edge crease ашиглан low poly feel хадгалсан. Color palette тоглооны original sprite-аас авч sun + ambient light-аар хэвлэсэн.",
+    "gallery": [
+      {
+        "src": "images/Pokecity/01_Characters.webp",
+        "ph": "Characters",
+        "ratio": "4/3",
+        "fit": "contain"
+      },
+      {
+        "src": "images/Pokecity/02_Pokemons.webp",
+        "ph": "Pokemons",
+        "ratio": "4/3",
+        "fit": "contain"
+      },
+      {
+        "src": "images/Pokecity/03_Buildings.webp",
+        "ph": "Buildings",
+        "ratio": "4/3",
+        "fit": "contain"
+      },
+      {
+        "src": "images/Pokecity/04_Assets.webp",
+        "ph": "Assets",
+        "ratio": "4/3",
+        "fit": "contain"
+      }
+    ],
+    "cols": 1,
+    "note": null,
+    "heroGrad": "g-pokecity",
+    "heroImg": null,
+    "heroVideo": "video/Pokecity.mp4",
+    "heroHeight": "540px"
+  },
+
+  "anubis": {
+    "id": "anubis",
+    "overview": "Египетийн Anubis бурхны дүрийг cyberpunk эрин рүү шилжүүлсэн character design.",
+    "process": "Armor subdivision нарийн болгоод PBR metallic material хийсэн. HDRI cityscape background дээр cyan neon effect бий болгосон. Bloom + chromatic aberration нэмсэн.",
+    "gallery": [
+      {
+        "src": "images/Anubis/Scene_1.webp",
+        "ph": "Scene 1",
+        "ratio": "4/3"
+      },
+      {
+        "src": "images/Anubis/Scene_2.webp",
+        "ph": "Scene 2",
+        "ratio": "4/3"
+      },
+      {
+        "src": "images/Anubis/Scene_3.webp",
+        "ph": "Scene 3",
+        "ratio": "4/3"
+      },
+      {
+        "src": "images/Anubis/Scene_4.webp",
+        "ph": "Scene 4",
+        "ratio": "4/3"
+      },
+      {
+        "src": "images/Anubis/Scene_5.webp",
+        "ph": "Scene 5",
+        "ratio": "4/3"
+      },
+      {
+        "src": "images/Anubis/Scene_6.webp",
+        "ph": "Scene 6",
+        "ratio": "4/3"
+      }
+    ],
+    "cols": 3,
+    "note": null,
+    "heroGrad": "g-anubis",
+    "heroImg": null,
+    "heroVideo": "video/Anubis.mp4",
+    "heroHeight": "540px"
+  },
+
+  "xlr8": {
+    "id": "xlr8",
+    "overview": "Ben 10 тоглооны XLR8 alien-ийн fan art poster. Dynamic pose + blue neon composition.",
+    "process": "Reference image-аас dynamic pose sketch хийн overlay + glow effect нэмсэн.",
+    "gallery": [
+      {
+        "src": "images/XLR8/01_BG_Raw.webp",
+        "ph": "BG RAW",
+        "ratio": "3/4"},
+
+      {
+        "src": "images/XLR8/02_BG_Gradient.webp",
+        "ph": "BG GRADIENT",
+        "ratio": "3/4"},
+
+      {
+        "src": "images/XLR8/03_BG_Texture.webp",
+        "ph": "BG TEXTURE",
+        "ratio": "3/4"},
+
+      {
+        "src": "images/XLR8/04_BG_Composition.webp",
+        "ph": "BG COMPOSITION",
+        "ratio": "3/4"},
+
+      {
+        "src": "images/XLR8/05_Characters.webp",
+        "ph": "CHARACTERS",
+        "ratio": "3/4"},
+
+      {
+        "src": "images/XLR8/06_Final.webp",
+        "ph": "FINAL RENDER",
+        "ratio": "3/4"}
+    ],
+    "cols": 1,
+    "note": null,
+    "heroGrad": "g-xlr8",
+    "heroImg": null,
+    "heroVideo": "https://res.cloudinary.com/dfruixbep/video/upload/v1781427691/XLR8_a1saun.mp4",
+    "heroHeight": "1200px",
+    "heroRatio": "Vertical"
+  },
+
+  "brand": {
+    "id": "brand",
+    "overview": "Өвөрхангай аймгийн нэгдсэн брэнд системийг бий болгох diplom ажил. Лого, өнгөний систем, typography, pattern, mockup бүхий бүрэн brandbook.",
+    "process": "Гэрэгэ, нар-тооно, Эрдэнэ Зуу хийд, Улаан цутгалан — дөрвөн тэмдэгтийг нэгтгэн лого бүтээсэн. Ногоон + шар өнгөний хослол нь байгаль + алт эрдэнэсийн бэлгэдэл.",
+    "gallery": [
+      {
+        "src": "images/Uvurkhangai/Gallery/01_Brandbook_Cover.webp",
+        "height": "100%",
+        "ph": "Cover",
+        "ratio": "3/4"
+      },
+      {
+        "src": "images/Uvurkhangai/Gallery/02_Brandbook_Content.webp",
+        "height": "100%",
+        "ph": "Content",
+        "ratio": "3/4"
+      },
+      {
+        "src": "images/Uvurkhangai/Gallery/03_Brandbook_Vision.webp",
+        "height": "100%",
+        "ph": "Vision",
+        "ratio": "3/4"
+      },
+      {
+        "src": "images/Uvurkhangai/Gallery/04_Brandbook_Tenet.webp",
+        "height": "100%",
+        "ph": "Tenet",
+        "ratio": "3/4"
+      },
+      {
+        "src": "images/Uvurkhangai/Gallery/05_Brandbook_Logo.webp",
+        "height": "100%",
+        "ph": "Logo",
+        "ratio": "3/4"
+      },
+      {
+        "src": "images/Uvurkhangai/Gallery/06_Brandbook_Structure.webp",
+        "height": "100%",
+        "ph": "Structure",
+        "ratio": "3/4"
+      },
+      {
+        "src": "images/Uvurkhangai/Gallery/07_Brandbook_Build.webp",
+        "height": "100%",
+        "ph": "Build",
+        "ratio": "3/4"
+      },
+      {
+        "src": "images/Uvurkhangai/Gallery/08_Brandbook_Clearspace.webp",
+        "height": "100%",
+        "ph": "Clearspace",
+        "ratio": "3/4"
+      },
+      {
+        "src": "images/Uvurkhangai/Gallery/09_Brandbook_Symbol.webp",
+        "height": "100%",
+        "ph": "Symbol",
+        "ratio": "3/4"
+      },
+      {
+        "src": "images/Uvurkhangai/Gallery/10_Brandbook_Color_Variants.webp",
+        "height": "100%",
+        "ph": "Color Variants",
+        "ratio": "3/4"
+      },
+      {
+        "src": "images/Uvurkhangai/Gallery/11_Brandbook_Color.webp",
+        "height": "100%",
+        "ph": "Color",
+        "ratio": "3/4"
+      },
+      {
+        "src": "images/Uvurkhangai/Gallery/12_Brandbook_Misuses.webp",
+        "height": "100%",
+        "ph": "Misuses",
+        "ratio": "3/4"
+      },
+      {
+        "src": "images/Uvurkhangai/Gallery/13_Brandbook_Typography.webp",
+        "height": "100%",
+        "ph": "Typography",
+        "ratio": "3/4"
+      },
+      {
+        "src": "images/Uvurkhangai/Gallery/14_Brandbook_Pattern.webp",
+        "height": "100%",
+        "ph": "Pattern",
+        "ratio": "3/4"
+      },
+
+      {
+        "src": "images/Uvurkhangai/Gallery/15_Brandbook_Landmarks.webp",
+        "height": "100%",
+        "ph": "Landmarks",
+        "ratio": "3/4"
+      },
+
+      {
+        "src": "images/Uvurkhangai/Gallery/16_Brandbook_Mockups.webp",
+        "height": "100%",
+        "ph": "Mockup",
+        "ratio": "3/4"
+      }
+    ],
+    "cols": 1,
+    "note": null,
+    "heroGrad": "g-brand",
+    "heroImg": "images/Uvurkhangai/Uvurkhangai_Poster.webp",
+    "heroVideo": null,
+    "heroHeight": "100%"
+  },
+
+  "vamp": {
+    "id": "vamp",
+    "overview": "Цус сорогчийн шүднээс санаа авж хийсэн фонт.",
+    "process": "Avengers киноны logo-ноос санаа авч serif font-ыг шүд хэлбэртэй болгох замаар хийсэн. Adobe Illustrator дээр vector зурж Fontlab ашиглан хийсэн.",
+    "gallery": [
+      {
+        "src": "images/brand/logo.jpg",
+        "ph": "Primary logo",
+        "ratio": "4/3"
+      },
+      {
+        "src": "images/brand/clearspace.jpg",
+        "ph": "Clearspace",
+        "ratio": "4/3"
+      },
+      {
+        "src": "images/brand/symbols.jpg",
+        "ph": "Symbols",
+        "ratio": "4/3"
+      },
+      {
+        "src": "images/brand/colors.jpg",
+        "ph": "Colors",
+        "ratio": "4/3"
+      },
+      {
+        "src": "images/brand/pattern.jpg",
+        "ph": "Pattern",
+        "ratio": "4/3"
+      },
+      {
+        "src": "images/brand/mockups.jpg",
+        "ph": "Mockups",
+        "ratio": "4/3"
+      }
+    ],
+    "cols": 3,
+    "note": null,
+    "heroGrad": "g-brand",
+    "heroImg": "images/Uvurkhangai_Logo.webp",
+    "heroVideo": null,
+    "heroHeight": "480px"
+  },
+
+  "esports": {
+    "id": "esports",
+    "overview": "Монголын e-sports салбарын 2016–2023 оны томоохон ололт амжилтуудыг snake-timeline хэлбэрт харуулсан ажил.",
+    "process": "Өгөгдлийн эх сурвалжийг цуглуулан timeline event-уудыг дэс дараалж зохион байгуулсан. Purple + dark navy өнгийн палитр ашигласан.",
+    "gallery": [
+      {
+        "src": "images/Esport/E-Sport Infographic.webp",
+        "ph": "Full infographic",
+        "ratio": "1/2"
+      }
+    ],
+    "cols": 1,
+    "note": null,
+    "heroGrad": "g-esports",
+    "heroImg": null,
+    "heroVideo": "https://res.cloudinary.com/dfruixbep/video/upload/v1781478884/esport_rf8nbm.mp4",
+    "heroHeight": "100%"
+  },
+
+  "nomads": {
+    "id": "nomads",
+    "overview": "Backpack Battle: Nomads бол Монгол нүүдэлчин дайчдын ертөнцөд суурилсан стратегийн тулааны тоглооны UI/UX дизайн систем. Loading screen-ээс тулааны дэлгэц хүртэл 18+ screen бүрэн дизайн.",
+    "process": "Монгол хуяг, зэвсэг, хувцасны судалгаанаас эхлэн UI component library үүсгэсэн. Mergen, Bukhu, Setsen — гурван дүрийн character card. Item card дизайнд stat grid pattern ашигласан.",
+    "gallery": [
+      {
+        "src": "images/BPB/00_Intro.webp",
+        "ph": "Intro",
+        "ratio": "9/16",
+        "fit": "contain"
+      },
+      {
+        "src": "images/BPB/01_ Home.webp",
+        "ph": "Home",
+        "ratio": "9/16",
+        "fit": "contain"
+      },
+      {
+        "src": "images/BPB/02_Hero_selection.webp",
+        "ph": "Characters",
+        "ratio": "9/16",
+        "fit": "contain"
+      },
+      {
+        "src": "images/BPB/03_Shop.webp",
+        "ph": "Shop",
+        "ratio": "9/16",
+        "fit": "contain"  
+      },
+      {
+        "src": "images/BPB/04_Battle.webp",
+        "ph": "Battle",
+        "ratio": "9/16",
+        "fit": "contain"
+      },
+      {
+        "src": "images/BPB/05_Win.webp",
+        "ph": "Win",
+        "ratio": "9/16",
+        "fit": "contain"
+      },
+      {
+        "src": "images/BPB/06_Nomads.webp",
+        "ph": "Nomads",
+        "ratio": "9/16",
+        "fit": "contain"
+      },
+      {
+        "src": "images/BPB/07_Mergen.webp",
+        "ph": "Mergen",
+        "ratio": "9/16",
+        "fit": "contain"
+      },
+      {
+        "src": "images/BPB/10_Inventory.webp",
+        "ph": "Inventory",
+        "ratio": "9/16",
+        "fit": "contain"
+      },
+      {
+        "src": "images/BPB/11_Item_Description.webp",
+        "ph": "Item Description",
+        "ratio": "9/16",
+        "fit": "contain"
+      },
+      {
+        "src": "images/BPB/12_Guild.webp",
+        "ph": "Guild",
+        "ratio": "9/16",
+        "fit": "contain"
+      },
+      {
+        "src": "images/BPB/13_Store.webp",
+        "ph": "Store",
+        "ratio": "9/16",
+        "fit": "contain"
+      },
+      {
+        "src": "images/BPB/14_Store_Item_Description.webp",
+        "ph": "Store Item Description",
+        "ratio": "9/16",
+        "fit": "contain"
+      },
+      {
+        "src": "images/BPB/15_User_Info.webp",
+        "ph": "User Info",
+        "ratio": "9/16",
+        "fit": "contain"
+      },
+      {
+        "src": "images/BPB/17_Settings.webp",
+        "ph": "Settings",
+        "ratio": "9/16",
+        "fit": "contain"
+      }
+    ],
+    "cols": 3,
+    "note": null,
+    "heroGrad": "g-nomads",
+    "heroImg": "images/backpack-battle-hero.jpg",
+    "heroVideo": null,
+    "heroHeight": "480px"
+  },
+
+  "poster": {
+    "id": "poster",
+    "overview": "\"Цус ойртолт\" буюу consanguinity-ийн тухай мэдлэг ухуулах editorial постер.",
+    "process": "Duotone filter + HUD-style decorative element ашигласан. Typographic tension-аар hierarchy илэрхийлсэн.",
+    "gallery": [
+      {
+        "src": "images/Inbreeding.webp",
+        "ph": "Final poster",
+        "ratio": "4/3"
+      }
+    ],
+    "cols": 3,
+    "note": null,
+    "heroGrad": "g-poster",
+    "heroImg": "images/Inbreeding/Inbreeding.webp",
+    "heroVideo": null,
+    "heroHeight": "650px"
+  },
+
+  "christmas": {
+    "id": "christmas",
+    "overview": "Хүүхдийн cartoon-ийн Tobibi дүрийн 3D character modeling.",
+    "process": "Cartoon-ийн 2D reference-аас 3D хэлбэр бий болгосон. Smooth shading болон toon look хадгалсан.",
+    "gallery": [
+      {
+        "src": "images/Tobibi.webp",
+        "ph": "Final model",
+        "ratio": "4/3"
+      }
+    ],
+    "cols": 3,
+    "note": null,
+    "heroGrad": "g-tobi",
+    "heroImg": "images/Tobibi.webp",
+    "heroVideo": null,
+    "heroHeight": "480px"
+  },
+
+  "tsuvuun": {
+    "id": "tsuvuun",
+    "overview": "Цөвүүн Цаг МУСК-ны post-production хэсэгт rotoscoping ажилбарт оролцсон.",
+    "process": "Түүхэн кино учир машин зам, тогны утас, шон зэргийг арлигахын тулд жүжигчид болон обject-уудыг арын дэвсгэрээс frame бүрт нь салгах ажил хийсэн.",
+    "gallery": [
+      {
+        "src": "images/Tsuvuun_tsag/Scene_1.webp",
+        "ph": "Scene 1",
+        "ratio": "16/9",
+        "fit": "contain"
+      },
+
+      {
+        "src": "images/Tsuvuun_tsag/Scene_2.webp",
+        "ph": "Scene 2",
+        "ratio": "16/9",
+        "fit": "contain"
+      },
+
+      {
+        "src": "images/Tsuvuun_tsag/Scene_3.webp",
+        "ph": "Scene 3",
+        "ratio": "16/9",
+        "fit": "contain"
+      },
+
+      {
+        "src": "images/Tsuvuun_tsag/Scene_4.webp",
+        "ph": "Scene 4",
+        "ratio": "16/9",
+        "fit": "contain"
+      }
+    ],
+    "cols": 2,
+    "note": null,
+    "heroGrad": "g-tsuvuun",
+    "heroImg": null,
+    "heroVideo": "https://youtu.be/cBfJPmUU9Zo",
+    "heroHeight": "480px"
+  },
+
+  "haluun": {
+    "id": "haluun",
+    "overview": "Монгол кино \"Халуун Бороо\"-ны post-production үйл явцад rotoscoping чиглэлд оролцсон.",
+    "process": "Тоглогчдын дүрийг frame-ийн гэрлийн нөхцөлд тохируулан rotoscoping хийсэн.",
+    "gallery": [
+      {
+        "src": "images/Haluun_boroo/Scene_1.webp",
+        "ph": "Scene 1",
+        "ratio": "16/9"
+      },
+      
+      {
+        "src": "images/Haluun_boroo/Scene_2.webp",
+        "ph": "Scene 2",
+        "ratio": "16/9"
+      },
+
+      {
+        "src": "images/Haluun_boroo/Scene_3.webp",
+        "ph": "Scene 3",
+        "ratio": "16/9"
+      },
+
+      {
+        "src": "images/Haluun_boroo/Scene_4.webp",
+        "ph": "Scene 4",
+        "ratio": "16/9"
+      },
+
+      {
+        "src": "images/Haluun_boroo/Scene_5.webp",
+        "ph": "Scene 5",
+        "ratio": "16/9"
+      },
+
+      {
+        "src": "images/Haluun_boroo/Scene_6.webp",
+        "ph": "Scene 6",
+        "ratio": "16/9"
+      }
+    ],
+    "cols": 3,
+    "note": null,
+    "heroGrad": "g-haluun",
+    "heroImg": null,
+    "heroVideo": "https://youtu.be/uZnvHbO5JkY",
+    "heroHeight": "480px"
+  },
+
+  "rio-naadam": {
+    "id": "rio-naadam",
+    "overview": "Rio Naadam 2025-ын post-production үйл явцад rotoscoping чиглэлд оролцсон.",
+    "process": "Тоглогчдын дүрийг frame-ийн гэрлийн нөхцөлд тохируулан rotoscoping хийсэн.",
+    "gallery": [
+      {
+        "src": "images/rio/Scene_1.webp",
+        "ph": "Scene 1",
+        "ratio": "16/9",
+        "fit": "contain"
+      },
+
+      {
+        "src": "images/rio/Scene_2.webp",
+        "ph": "Scene 2",
+        "ratio": "16/9",
+        "fit": "contain"
+      },
+
+      { 
+        "src": "images/rio/Scene_3.webp",
+        "ph": "Scene 3",
+        "ratio": "16/9",
+        "fit": "contain"
+      },
+
+      {
+        "src": "images/rio/Scene_4.webp",
+        "ph": "Scene 4",
+        "ratio": "16/9",
+        "fit": "contain"
+      }
+    ],
+    "cols": 2,
+    "note": null,
+    "heroGrad": "g-rio-naadam",
+    "heroImg": null,
+    "heroVideo": "https://youtu.be/JipHhwesLpU?si=hEV1HZFKjNG7mviE",
+    "heroHeight": "480px"
+  },
+
+  "teso-naadam": {
+    "id": "teso-naadam",
+    "overview": "Teso Naadam 2025-ын post-production үйл явцад rotoscoping чиглэлд оролцсон.",
+    "process": "Тоглогчдын дүрийг frame-ийн гэрлийн нөхцөлд тохируулан rotoscoping хийсэн.",
+    "gallery": [
+      {
+        "src": "images/Teso/Scene_1.webp",
+        "ph": "Scene 1",
+        "ratio": "16/9",
+        "fit": "contain"
+      },
+
+      {
+        "src": "images/Teso/Scene_2.webp",
+        "ph": "Scene 2",
+        "ratio": "16/9",
+        "fit": "contain"
+      },
+
+      {
+        "src": "images/Teso/Scene_3.webp",
+        "ph": "Scene 3",
+        "ratio": "16/9",
+        "fit": "contain"
+      },
+
+      {
+        "src": "images/Teso/Scene_4.webp",
+        "ph": "Scene 4",
+        "ratio": "16/9",
+        "fit": "contain"
+      },
+
+      {
+        "src": "images/Teso/Scene_5.webp",
+        "ph": "Scene 5",
+        "ratio": "16/9",
+        "fit": "contain"
+      },
+
+      {
+        "src": "images/Teso/Scene_6.webp",
+        "ph": "Scene 6",
+        "ratio": "16/9",
+        "fit": "contain"
+      }
+
+    ],
+    "cols": 3,
+    "note": null,
+    "heroGrad": "g-teso-naadam",
+    "heroImg": "images/Teso/cover.webp",
+    "heroVideo": "https://www.facebook.com/reel/1053210390328585",
+    "heroHeight": "480px"
+  },
+
+  "buff": {
+    "id": "buff",
+    "overview": "Buff Energy Drink-ын ТVC бичлэгт Previz, Motion Graphics, SFX ажилбаруудад оролцсон.",
+    "process": "Buff Energy Drink-ын ТVC бичлэгт Previz, Motion Graphics, SFX ажилбаруудад оролцсон.",
+    "gallery": [
+      {
+        "src": "images/Buff/01_Storyboard.webp",
+        "ph": "Storyboard",
+        "ratio": "16/9",
+        "fit": "contain"
+      },
+
+      {
+        "src": "images/Buff/02_Previz.webp",
+        "ph": "Previz",
+        "ratio": "16/9",
+        "fit": "contain"
+      },
+
+      {
+        "src": "images/Buff/03_Final.webp",
+        "ph": "Final Render",
+        "ratio": "16/9",
+        "fit": "contain"
+      }
+    ],
+    "cols": 1,
+    "note": null,
+    "heroGrad": "g-buff",
+    "heroImg": null,
+    "heroVideo": "https://www.youtube.com/watch?v=WvA9u-byWvQ",
+    "heroHeight": "480px"
+  },
+
+  "taiga": {
+    "id": "taiga",
+    "overview": "Taiga-ын ТVC бичлэгт Previz, Motion Graphics, SFX ажилбаруудад оролцсон.",
+    "process": "Taiga-ын ТVC бичлэгт Previz, Motion Graphics, SFX ажилбаруудад оролцсон.",
+    "gallery": [
+      {
+        "src": "images/Taiga/Scene_1.webp",
+        "ph": "Scene 1",
+        "ratio": "16/9",
+        "fit": "contain"
+      },
+
+      {
+        "src": "images/Taiga/Scene_2.webp",
+        "ph": "Scene 2",
+        "ratio": "16/9",
+        "fit": "contain"
+      },
+
+      {
+        "src": "images/Taiga/Scene_3.webp",
+        "ph": "Scene 3",
+        "ratio": "16/9",
+        "fit": "contain"
+      },
+
+      {
+        "src": "images/Taiga/Scene_4.webp",
+        "ph": "Scene 4",
+        "ratio": "16/9",
+        "fit": "contain"
+      },
+
+      {
+        "src": "images/Taiga/Scene_5.webp",
+        "ph": "Scene 5",
+        "ratio": "16/9",
+        "fit": "contain"
+      },
+
+      {
+        "src": "images/Taiga/Scene_6.webp",
+        "ph": "Scene 6",
+        "ratio": "16/9",
+        "fit": "contain"
+      }
+    ],
+    "cols": 3,
+    "note": null,
+    "heroGrad": "g-taiga",
+    "heroImg": null,
+    "heroVideo": "https://www.youtube.com/watch?v=9-OeA36LOQY",
+    "heroHeight": "480px"
+  },
+
+  "tobibi-font": {
+    "id": "tobibi-font",
+    "overview": "Цус сорогчийн шүднээс санаа авж хийсэн фонт.",
+    "process": "Avengers киноны logo-ноос санаа авч serif font-ыг шүд хэлбэртэй болгох замаар хийсэн. Adobe Illustrator дээр vector зурж Fontlab ашиглан хийсэн.",
+    "gallery": [
+      {
+        "src": "images/brand/logo.jpg",
+        "ph": "Primary logo",
+        "ratio": "4/3"
+      },
+      {
+        "src": "images/brand/clearspace.jpg",
+        "ph": "Clearspace",
+        "ratio": "4/3"
+      },
+      {
+        "src": "images/brand/symbols.jpg",
+        "ph": "Symbols",
+        "ratio": "4/3"
+      },
+      {
+        "src": "images/brand/colors.jpg",
+        "ph": "Colors",
+        "ratio": "4/3"
+      },
+      {
+        "src": "images/brand/pattern.jpg",
+        "ph": "Pattern",
+        "ratio": "4/3"
+      },
+      {
+        "src": "images/brand/mockups.jpg",
+        "ph": "Mockups",
+        "ratio": "4/3"
+      }
+    ],
+    "cols": 3,
+    "note": null,
+    "heroGrad": "g-brand",
+    "heroImg": "images/Uvurkhangai_Logo.webp",
+    "heroVideo": null,
+    "heroHeight": "480px"
+  },
+
+  "champ": {
+    "id": "champ",
+    "overview": "Champ Syrup хүүхдийн ханиадны эмийн брэндийн mascot panda дүр. Character modeling болон package render.",
+    "process": "Toon-shaded panda хийсэн. Package design-тай уялдуулахын тулд front, side, 3/4 angle render хийсэн",
+    "gallery": [
+      {
+        "src": "images/Panda.webp",
+        "ph": "Final render",
+        "ratio": "4/3"
+      }
+    ],
+    "cols": 3,
+    "note": null,
+    "heroGrad": "g-champ",
+    "heroImg": "images/Panda.webp",
+    "heroVideo": null,
+    "heroHeight": "480px"
+  }
+
+  
+}

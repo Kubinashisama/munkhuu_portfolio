@@ -7,358 +7,10 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
-<style>
-/* ─────────────────────────────────────────
-   TOKENS
-───────────────────────────────────────── */
-:root {
-  --bg:        #0a0a0c;
-  --bg-2:      #0f0f12;
-  --bg-card:   #131316;
-  --text:      #ede9e2;
-  --text-sub:  #8a867f;
-  --text-dim:  #4e4b47;
-  --accent:    #c9a96e;
-  --accent-lo: rgba(201,169,110,.12);
-  --border:    rgba(255,255,255,.07);
-  --border-hi: rgba(201,169,110,.3);
-  --ff-head:   'Syne', sans-serif;
-  --ff-body:   'Plus Jakarta Sans', sans-serif;
-}
-*, *::before, *::after { box-sizing:border-box; margin:0; padding:0; }
-html { scroll-behavior:smooth; }
-
-body {
-  background: var(--bg);
-  color: var(--text);
-  font-family: var(--ff-body);
-  font-weight: 300;
-  line-height: 1.7;
-  overflow-x: hidden;
-}
-
-/* Dot grid overlay */
-body::before {
-  content:'';
-  position:fixed; inset:0;
-  background-image: radial-gradient(circle, rgba(255,255,255,.018) 1px, transparent 1px);
-  background-size: 28px 28px;
-  pointer-events:none;
-  z-index:9999;
-}
-
-/* ─────────────────────────────────────────
-   NAV
-───────────────────────────────────────── */
-nav {
-  position:fixed; top:0; left:0; right:0;
-  padding:1.25rem 4rem;
-  display:flex; align-items:center; justify-content:space-between;
-  z-index:200;
-  background: linear-gradient(to bottom, rgba(10,10,12,.97) 0%, rgba(10,10,12,0) 100%);
-  backdrop-filter: blur(16px);
-}
-.nav-logo {
-  font-family:var(--ff-head);
-  font-size:14px; font-weight:700; letter-spacing:.06em;
-  color:var(--text); text-decoration:none;
-}
-.nav-logo span { color:var(--accent); }
-.nav-links { display:flex; align-items:center; gap:2.5rem; list-style:none; }
-.nav-links a {
-  font-size:11px; font-weight:400; letter-spacing:.12em;
-  text-transform:uppercase; color:var(--text-sub);
-  text-decoration:none; transition:color .2s;
-}
-.nav-links a:hover { color:var(--text); }
-.nav-cta {
-  font-size:11px !important; font-weight:500 !important;
-  padding:8px 20px;
-  border:0.5px solid var(--accent) !important;
-  border-radius:100px; color:var(--accent) !important;
-  transition:background .2s, color .2s !important;
-}
-.nav-cta:hover { background:var(--accent) !important; color:var(--bg) !important; }
-
-/* ─────────────────────────────────────────
-   HERO
-───────────────────────────────────────── */
-.hero {
-  min-height:100vh;
-  display:flex; flex-direction:column; justify-content:flex-end;
-  padding:0 4rem 5rem;
-  position:relative; overflow:hidden;
-}
-.hero-grid {
-  position:absolute; inset:0;
-  background-image:
-    linear-gradient(rgba(255,255,255,.022) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,.022) 1px, transparent 1px);
-  background-size: 70px 70px;
-  mask-image: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,.25) 40%, transparent 100%);
-}
-.hero-glow {
-  position:absolute; bottom:-20%; left:5%;
-  width:500px; height:500px; border-radius:50%;
-  background: radial-gradient(circle, rgba(201,169,110,.06) 0%, transparent 70%);
-  pointer-events:none;
-}
-.hero-eyebrow {
-  display:inline-flex; align-items:center; gap:10px;
-  font-size:11px; letter-spacing:.16em; text-transform:uppercase;
-  color:var(--accent); margin-bottom:2rem;
-  opacity:0; animation:fadeUp .8s .2s forwards;
-}
-.hero-eyebrow::before { content:''; width:28px; height:1px; background:var(--accent); }
-.hero-name {
-  font-family:var(--ff-head);
-  font-size:clamp(3.5rem,9vw,8rem);
-  font-weight:800; line-height:.9; letter-spacing:-.025em;
-  margin-bottom:2.5rem;
-  opacity:0; animation:fadeUp .9s .35s forwards;
-}
-.hero-name .dim { color:var(--text-dim); font-weight:400; font-style:italic; }
-.hero-roles {
-  display:flex; gap:8px; flex-wrap:wrap; margin-bottom:1rem;
-  opacity:0; animation:fadeUp .8s .5s forwards;
-}
-.hero-role {
-  font-size:11px; letter-spacing:.07em;
-  padding:6px 14px;
-  border:0.5px solid var(--border); border-radius:100px;
-  color:var(--text-sub);
-}
-.hero-scroll {
-  position:absolute; bottom:3rem; right:4rem;
-  display:flex; align-items:center; gap:10px;
-  font-size:10px; letter-spacing:.14em; text-transform:uppercase; color:var(--text-dim);
-  opacity:0; animation:fadeUp .8s .9s forwards;
-}
-.scroll-line {
-  width:48px; height:1px; background:var(--text-dim);
-  animation:pulse 2s 1.5s ease-in-out infinite;
-}
-@keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.3} }
-@keyframes fadeUp { from{opacity:0;transform:translateY(22px)} to{opacity:1;transform:translateY(0)} }
-
-/* ─────────────────────────────────────────
-   SECTION BASE
-───────────────────────────────────────── */
-section { padding:6rem 4rem; }
-.sec-label {
-  font-size:10px; letter-spacing:.18em; text-transform:uppercase;
-  color:var(--accent); margin-bottom:1rem;
-  display:flex; align-items:center; gap:12px;
-}
-.sec-label::after { content:''; width:40px; height:1px; background:var(--accent); opacity:.5; }
-.sec-title {
-  font-family:var(--ff-head);
-  font-size:clamp(1.8rem,4vw,2.8rem);
-  font-weight:700; line-height:1.05; letter-spacing:-.02em;
-  margin-bottom:3rem;
-}
-
-/* ─────────────────────────────────────────
-   PROJECTS
-───────────────────────────────────────── */
-.filter-bar { display:flex; gap:8px; flex-wrap:wrap; margin-bottom:2rem; }
-.fbtn {
-  font-family:var(--ff-body); font-size:11px; letter-spacing:.07em;
-  padding:7px 18px; border:0.5px solid var(--border); border-radius:100px;
-  background:transparent; color:var(--text-sub); cursor:pointer; transition:all .2s;
-}
-.fbtn:hover, .fbtn.on { border-color:var(--accent); color:var(--accent); background:var(--accent-lo); }
-
-.grid {
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:2px;
-}
-.card {
-  position:relative; overflow:hidden;
-  background:var(--bg-card); aspect-ratio:4/3;
-  cursor:pointer;
-  transition:transform .4s ease;
-}
-.card.wide { grid-column:span 2; aspect-ratio:auto; min-height:360px; }
-.card.tall { grid-row:span 2; aspect-ratio:auto; }
-
-/* Image — user replaces placeholder with <img class="cimg"> */
-.cimg {
-  width:100%; height:100%; object-fit:cover; display:block;
-  transition:transform .5s ease;
-}
-.card:hover .cimg { transform:scale(1.05); }
-
-/* Gradient placeholder — remove once you add real images */
-.ph {
-  position:absolute; inset:0;
-  display:flex; align-items:center; justify-content:center;
-}
-.ph-label {
-  font-size:10px; letter-spacing:.1em; text-transform:uppercase;
-  color:rgba(255,255,255,.12); text-align:center; padding:1rem;
-  pointer-events:none;
-}
-
-/* Overlay — always visible when ph present, hover only when cimg present */
-.ov {
-  position:absolute; inset:0;
-  background:linear-gradient(to top, rgba(10,10,12,.97) 0%, rgba(10,10,12,.35) 65%, transparent 100%);
-  padding:1.5rem; display:flex; flex-direction:column; justify-content:flex-end;
-  opacity:0; transition:opacity .3s ease;
-}
-.ph ~ .ov { opacity:1; }
-.card:hover .ov { opacity:1; }
-
-.c-cat  { font-size:10px; letter-spacing:.12em; text-transform:uppercase; color:var(--accent); margin-bottom:5px; }
-.c-name { font-family:var(--ff-head); font-size:15px; font-weight:600; line-height:1.2; margin-bottom:5px; }
-.c-desc { font-size:11px; color:var(--text-sub); line-height:1.5; }
-.c-tags { display:flex; gap:5px; flex-wrap:wrap; margin-top:9px; }
-.c-tag  { font-size:10px; padding:3px 8px; border:0.5px solid rgba(255,255,255,.12); border-radius:100px; color:rgba(255,255,255,.35); }
-
-/* Placeholder gradients */
-.g-nomads  { background:linear-gradient(135deg,#1a0800,#4a1800,#8a3a10); }
-.g-brand   { background:linear-gradient(135deg,#010e01,#071f07,#163316); }
-.g-hollow  { background:linear-gradient(135deg,#000712,#001028,#00256e); }
-.g-anubis  { background:linear-gradient(135deg,#000b0e,#00182b,#004060); }
-.g-tobi    { background:linear-gradient(135deg,#1a0500,#4a1200,#a03800); }
-.g-poster  { background:linear-gradient(135deg,#100000,#330000,#6a0000); }
-.g-vfx     { background:linear-gradient(135deg,#0c0c14,#18182e,#28284a); }
-.g-lowpoly { background:linear-gradient(135deg,#081200,#14330a,#245218); }
-.g-champ   { background:linear-gradient(135deg,#070e1e,#121e40,#223870); }
-.g-esports { background:linear-gradient(135deg,#060010,#140038,#2c0080); }
-.g-xlr8    { background:linear-gradient(135deg,#00060f,#001030,#002060); }
-.g-lanaya  { background:linear-gradient(135deg,#100020,#280050,#500090); }
-
-/* ─────────────────────────────────────────
-   SKILLS
-───────────────────────────────────────── */
-.sk-grid { display:grid; grid-template-columns:1fr 1fr; gap:4rem; }
-.sk-head {
-  font-family:var(--ff-head); font-size:12px; font-weight:600;
-  letter-spacing:.1em; text-transform:uppercase; color:var(--text-sub);
-  margin-bottom:1.5rem; padding-bottom:1rem; border-bottom:0.5px solid var(--border);
-}
-.sk-row { display:flex; align-items:center; gap:14px; margin-bottom:1rem; }
-.sk-name { font-size:12px; color:var(--text-sub); width:150px; flex-shrink:0; }
-.sk-track { flex:1; height:2px; background:var(--border); border-radius:100px; overflow:hidden; }
-.sk-fill  { height:100%; background:var(--accent); border-radius:100px; width:0; transition:width 1.3s cubic-bezier(.4,0,.2,1); }
-.sk-pct   { font-size:10px; color:var(--text-dim); width:28px; text-align:right; }
-.tags-cloud { display:flex; flex-wrap:wrap; gap:8px; }
-.tag {
-  font-size:11px; padding:6px 14px;
-  border:0.5px solid var(--border); border-radius:100px; color:var(--text-sub);
-}
-
-/* ─────────────────────────────────────────
-   ABOUT
-───────────────────────────────────────── */
-.about-grid { display:grid; grid-template-columns:280px 1fr; gap:5rem; align-items:start; }
-.about-photo {
-  aspect-ratio:3/4; background:var(--bg-card);
-  border:0.5px solid var(--border); border-radius:4px; overflow:hidden;
-  position:relative;
-}
-.about-photo-ph {
-  position:absolute; inset:0;
-  display:flex; align-items:center; justify-content:center;
-  font-size:11px; letter-spacing:.1em; text-transform:uppercase;
-  color:var(--text-dim); background:linear-gradient(160deg,#111118,#0d0d10);
-  text-align:center; line-height:2;
-}
-/* To add real photo: <img src="photo.jpg" style="width:100%;height:100%;object-fit:cover"> */
-.about-p { font-size:14px; line-height:1.9; color:var(--text-sub); margin-bottom:1.2rem; }
-.about-p strong { color:var(--text); font-weight:500; }
-.stats { display:grid; grid-template-columns:repeat(3,1fr); gap:1.5rem; margin-top:2rem; }
-.stat { border-top:0.5px solid var(--border); padding-top:1rem; }
-.stat-n { font-family:var(--ff-head); font-size:2rem; font-weight:700; line-height:1; margin-bottom:4px; }
-.stat-l { font-size:11px; color:var(--text-dim); }
-
-/* ─────────────────────────────────────────
-   TIMELINE
-───────────────────────────────────────── */
-.tl { position:relative; padding-left:2rem; margin-top:4rem; }
-.tl::before { content:''; position:absolute; left:0; top:8px; bottom:8px; width:0.5px; background:var(--border); }
-.tl-item { position:relative; margin-bottom:2.5rem; }
-.tl-item::before {
-  content:''; position:absolute; left:-2rem; top:8px;
-  width:6px; height:6px; border-radius:50%;
-  background:var(--accent); transform:translateX(-2px);
-}
-.tl-period { font-size:10px; letter-spacing:.1em; text-transform:uppercase; color:var(--accent); margin-bottom:4px; }
-.tl-title  { font-family:var(--ff-head); font-size:16px; font-weight:600; margin-bottom:2px; }
-.tl-org    { font-size:12px; color:var(--text-sub); margin-bottom:8px; }
-.tl-desc   { font-size:12px; color:var(--text-dim); line-height:1.7; max-width:540px; }
-
-/* ─────────────────────────────────────────
-   CONTACT
-───────────────────────────────────────── */
-.contact-grid { display:grid; grid-template-columns:1fr 1fr; gap:4rem; align-items:center; }
-.contact-big {
-  font-family:var(--ff-head);
-  font-size:clamp(2rem,4.5vw,3.2rem);
-  font-weight:700; line-height:1.1; letter-spacing:-.02em;
-}
-.contact-big em { color:var(--accent); font-style:italic; }
-.c-links { display:flex; flex-direction:column; gap:10px; }
-.c-link {
-  display:flex; align-items:center; gap:16px;
-  text-decoration:none; padding:14px 18px;
-  border:0.5px solid var(--border); border-radius:4px;
-  transition:border-color .2s, background .2s;
-}
-.c-link:hover { border-color:var(--border-hi); background:var(--accent-lo); }
-.c-link-key { font-size:10px; letter-spacing:.1em; text-transform:uppercase; color:var(--accent); width:65px; flex-shrink:0; }
-.c-link-val { font-size:13px; color:var(--text); }
-
-/* ─────────────────────────────────────────
-   FOOTER
-───────────────────────────────────────── */
-footer {
-  padding:2rem 4rem;
-  border-top:0.5px solid var(--border);
-  display:flex; justify-content:space-between; align-items:center;
-}
-.ft { font-size:11px; color:var(--text-dim); }
-
-/* ─────────────────────────────────────────
-   ANIMATION
-───────────────────────────────────────── */
-.fi { opacity:0; transform:translateY(18px); transition:opacity .7s ease, transform .7s ease; }
-.fi.on { opacity:1; transform:translateY(0); }
-
-.card.hide { display:none; }
-
-/* ─────────────────────────────────────────
-   RESPONSIVE
-───────────────────────────────────────── */
-@media(max-width:960px){
-  nav { padding:1.25rem 1.5rem; }
-  .nav-links { display:none; }
-  section { padding:4rem 1.5rem; }
-  .hero { padding:0 1.5rem 4rem; }
-  .grid { grid-template-columns:1fr 1fr; }
-  .card.wide { grid-column:span 2; }
-  .card.tall { grid-row:auto; }
-  .sk-grid { grid-template-columns:1fr; gap:2.5rem; }
-  .about-grid { grid-template-columns:1fr; gap:2rem; }
-  .about-photo { max-width:200px; }
-  .contact-grid { grid-template-columns:1fr; }
-  footer { flex-direction:column; gap:6px; text-align:center; }
-}
-@media(max-width:600px){
-  .grid { grid-template-columns:1fr; }
-  .card.wide, .card.tall { grid-column:auto; grid-row:auto; min-height:260px; }
-  .stats { grid-template-columns:1fr 1fr; }
-}
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- ══════════════════════════════════
-     NAV
-══════════════════════════════════ -->
 <nav>
   <a href="#home" class="nav-logo">M<span>.</span>Erdene</a>
   <ul class="nav-links">
@@ -369,323 +21,111 @@ footer {
   </ul>
 </nav>
 
-<!-- ══════════════════════════════════
-     HERO
-══════════════════════════════════ -->
 <section class="hero" id="home">
   <div class="hero-grid"></div>
   <div class="hero-glow"></div>
-
   <div class="hero-eyebrow">Ulaanbaatar, Mongolia — Tetra FX</div>
-  <h1 class="hero-name">
-    Мөнх-Эрдэнэ<span class="dim">Portfolio</span>
-  </h1>
+  <h1 class="hero-name">Мөнх-<br><span class="dim">Эрдэнэ</span></h1>
   <div class="hero-roles">
     <span class="hero-role">3D Artist</span>
     <span class="hero-role">VFX Artist</span>
     <span class="hero-role">Graphic Designer</span>
     <span class="hero-role">Motion Graphics</span>
   </div>
-  <div class="hero-scroll">
-    <span class="scroll-line"></span>
-    Доош гүйлгэ
-  </div>
+  <div class="hero-scroll"><span class="scroll-line"></span>Доош гүйлгэ</div>
 </section>
 
-<!-- ══════════════════════════════════
-     PROJECTS
-══════════════════════════════════ -->
+<!-- ══ PROJECTS ══ -->
 <section id="projects">
   <div class="sec-label">02 — Бүтээлүүд</div>
   <h2 class="sec-title fi">Сонгосон ажлууд</h2>
-
   <div class="filter-bar fi">
     <button class="fbtn on" data-f="all">Бүгд</button>
     <button class="fbtn" data-f="design">Design</button>
     <button class="fbtn" data-f="3d">3D &amp; Illustration</button>
     <button class="fbtn" data-f="vfx">VFX &amp; Production</button>
+    <button class="fbtn" data-f="typography">Typography</button>
   </div>
 
-  <div class="grid" id="pgrid">
+  <!-- ── Ганцаарчилсан бүтээлүүд — script.js-аас үүснэ ── -->
+  <p class="sec-subtitle fi">Ганцаарчилсан бүтээлүүд</p>
+  <div class="grid fi" id="pgrid"></div>
 
-    <!-- ── BACKPACK BATTLE (wide) -->
-    <div class="card wide fi" data-c="design">
-      <!--★ Зурагтай болгох: эхний мөрийг устгаад доорхийг тайлбараас салга
-      <img src="images/backpack-battle.jpg" alt="Backpack Battle" class="cimg"> -->
-      <div class="ph g-nomads"><span class="ph-label">Backpack Battle cover image<br>2000×1200px recommended</span></div>
-      <div class="ov">
-        <div class="c-cat">Game UI / UX Design</div>
-        <div class="c-name">Backpack Battle: Nomads</div>
-        <div class="c-desc">Монгол дайчин дүрт тулааны тоглооны бүрэн UI дизайн систем — 18 дэлгэц, нэгдмэл visual language, монгол өнгөний палитр.</div>
-        <div class="c-tags">
-          <span class="c-tag">Figma</span><span class="c-tag">Game UI</span><span class="c-tag">Character Design</span><span class="c-tag">2022</span>
-        </div>
-      </div>
-    </div>
+  <!-- ── Гар бие оролцсон ажлууд — script.js-аас үүснэ ── -->
+  <p class="sec-subtitle fi">Гар бие оролцсон ажлууд</p>
+  <div class="grid fi" id="cgrid"></div>
 
-    <!-- ── BRANDBOOK -->
-    <div class="card fi" data-c="design">
-      <img src="Images/Uvurkhangai_Poster.webp" alt="Brandbook" class="cimg">
-      <div class="ov">
-        <div class="c-cat">Brand Identity</div>
-        <div class="c-name">Өвөрхангай Аймаг Brandbook</div>
-        <div class="c-desc">Аймгийн бүрэн брэнд систем — лого, өнгийн палитр, typography, pattern, mockup.</div>
-        <div class="c-tags">
-          <span class="c-tag">Branding</span><span class="c-tag">Illustrator</span><span class="c-tag">2023</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- ── HOLLOW KNIGHT (tall) -->
-    <div class="card tall fi" data-c="3d">
-      <img src="Images/Hollow_Knight_Poster.webp" alt="Hollow Knight" class="cimg"> 
-      <div class="ov">
-        <div class="c-cat">3D Render · Fan Art</div>
-        <div class="c-name">Hollow Knight</div>
-        <div class="c-desc">Atmospheric 3D render — cinematic gэрэлтүүлэг, subsurface effect, depth of field.</div>
-        <div class="c-tags">
-          <span class="c-tag">Blender</span><span class="c-tag">Render</span><span class="c-tag">2024</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- ── ANUBIS -->
-    <div class="card fi" data-c="3d">
-      <img src="Images/Anubis.webp" alt="Anubis 2077" class="cimg">
-      <div class="ov">
-        <div class="c-cat">3D Environment - Character Animation</div>
-        <div class="c-name">Anubis 2077</div>
-        <div class="c-desc">Cyberpunk хотын орчин, Дүрийн animation</div>
-        <div class="c-tags">
-          <span class="c-tag">Blender</span><span class="c-tag">Character</span><span class="c-tag">2023</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- ── TOBI ANIMATION -->
-    <div class="card fi" data-c="3d">
-      <img src="Images/Tobibi.webp" alt="Tobi" class="cimg">
-      <div class="ov">
-        <div class="c-cat">3D Environment</div>
-        <div class="c-name">Tobibi — Cartoon Series</div>
-        <div class="c-desc"> Шинэ жилийн мэндчилгээнд зориулсан 3D орчин </div>
-        <div class="c-tags">
-          <span class="c-tag">Blender</span><span class="c-tag">Animation</span><span class="c-tag">2026</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- ── VFX REEL (wide) -->
-    <div class="card wide fi" data-c="vfx">
-      <!--★ <img src="images/vfx-reel.jpg" alt="VFX Reel" class="cimg"> -->
-      <div class="ph g-vfx"><span class="ph-label">VFX reel thumbnail / stills<br>1920×1080px</span></div>
-      <div class="ov">
-        <div class="c-cat">VFX · Rotoscoping · Compositing · Previz</div>
-        <div class="c-name">Production Reel — Тэтра Эф Экс</div>
-        <div class="c-desc">Цөвүүн Цаг, Халуун Бороо, Pearl of Taiga (кино) · Rio Tinto Хийморьтой Наадам, Teso Монгол Наадам, Vitafit Buff (TVC) · Rotoscoping, compositing, modeling, tracking.</div>
-        <div class="c-tags">
-          <span class="c-tag">Nuke</span><span class="c-tag">After Effects</span><span class="c-tag">Rotoscoping</span><span class="c-tag">Compositing</span><span class="c-tag">2024–2025</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- ── LOW POLY -->
-    <div class="card fi" data-c="3d">
-      <img src="Images/Pokecity.webp" alt="Low Poly City" class="cimg">
-      <div class="ov">
-        <div class="c-cat">3D Environment</div>
-        <div class="c-name">Low Poly Pokémon City</div>
-        <div class="c-desc">Детальтай low poly хот — building, vegetation, lighting system, isometric camera.</div>
-        <div class="c-tags">
-          <span class="c-tag">Blender</span><span class="c-tag">Low Poly</span><span class="c-tag">2022</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- ── CHAMP -->
-    <div class="card fi" data-c="3d">
-      <!--★ <img src="images/champ.jpg" alt="Champ" class="cimg"> -->
-      <div class="ph g-champ"><span class="ph-label">Champ panda render<br>1200×1200px</span></div>
-      <div class="ov">
-        <div class="c-cat">Commercial · Character Design</div>
-        <div class="c-name">Champ — Panda Mascot</div>
-        <div class="c-desc">Хүүхдийн ханиадны syrup-ийн брэндийн дүр. Character modeling + package design.</div>
-        <div class="c-tags">
-          <span class="c-tag">Blender</span><span class="c-tag">Commercial</span><span class="c-tag">2025</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- ── ESPORTS -->
-    <div class="card fi" data-c="design">
-      <img src="Images/E-Sport_Infographic.webp" alt="Esports Infographic" class="cimg">
-      <div class="ov">
-        <div class="c-cat">Infographic Design</div>
-        <div class="c-name">Монголын Цахим Спорт</div>
-        <div class="c-desc">Монгол e-sports ололт амжилтуудын цаг хугацааны шугам болон data visualization.</div>
-        <div class="c-tags">
-          <span class="c-tag">Illustrator</span><span class="c-tag">Data Viz</span><span class="c-tag">2023</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- ── POSTER -->
-    <div class="card fi" data-c="design">
-      <img src="Images/Inbreeding.webp" alt="Цус Ойртолт" class="cimg">
-      <div class="ov">
-        <div class="c-cat">Editorial Design</div>
-        <div class="c-name">Цус Ойртолт</div>
-        <div class="c-desc">Цусан хамаатны харилцааны тухай шинжлэх ухааны infographic постер дизайн.</div>
-        <div class="c-tags">
-          <span class="c-tag">Photoshop</span><span class="c-tag">Typography</span><span class="c-tag">2023</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- ── XLR8 -->
-    <div class="card fi" data-c="3d">
-      <img src="Images/XLR8_Poster.webp" class="cimg">
-      <div class="ov">
-        <div class="c-cat">2D Illustration · Fan Art</div>
-        <div class="c-name">XLR8 — Ben 10</div>
-        <div class="c-desc">2D digital illustration — layered composition, dynamic pose.</div>
-        <div class="c-tags">
-          <span class="c-tag">Photoshop</span><span class="c-tag">Illustration</span><span class="c-tag">2023</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- ── LANAYA -->
-    <div class="card fi" data-c="3d">
-      <img src="Images/Templar_Assassin.webp" alt="Lanaya" class="cimg">
-      <div class="ov">
-        <div class="c-cat">3D Character · Fan Art</div>
-        <div class="c-name">Templar Assassin - Dota 2</div>
-        <div class="c-desc">Dota 2-ийн Templar Assassin дүрийн 3D render — neon pentagram platform, starfield background.</div>
-        <div class="c-tags">
-          <span class="c-tag">Maya</span><span class="c-tag">Character</span><span class="c-tag">2022</span>
-        </div>
-      </div>
-    </div>
-
-  </div><!-- /grid -->
 </section>
 
-<!-- ══════════════════════════════════
-     SKILLS
-══════════════════════════════════ -->
+<!-- ══ SKILLS ══ -->
 <section id="skills" style="background:var(--bg-2)">
   <div class="sec-label">03 — Ур чадвар</div>
   <h2 class="sec-title fi">Хэрэгсэл &amp; Мэдлэг</h2>
-
-  <div class="sk-grid fi" id="skills-wrap">
+  <div class="sk-grid fi">
     <div>
       <div class="sk-head">Програм хангамж</div>
-      <div class="sk-row"><span class="sk-name">Blender 3D</span><div class="sk-track"><div class="sk-fill" data-w="100"></div></div><span class="sk-pct">100</span></div>
-      <div class="sk-row"><span class="sk-name">Adobe Photoshop</span><div class="sk-track"><div class="sk-fill" data-w="100"></div></div><span class="sk-pct">100</span></div>
-      <div class="sk-row"><span class="sk-name">Adobe Illustrator</span><div class="sk-track"><div class="sk-fill" data-w="100"></div></div><span class="sk-pct">100</span></div>
-      <div class="sk-row"><span class="sk-name">After Effects</span><div class="sk-track"><div class="sk-fill" data-w="80"></div></div><span class="sk-pct">80</span></div>
-      <div class="sk-row"><span class="sk-name">Adobe Premiere</span><div class="sk-track"><div class="sk-fill" data-w="80"></div></div><span class="sk-pct">80</span></div>
+      <div class="sk-row"><span class="sk-name">Blender 3D</span><div class="sk-track"><div class="sk-fill" data-w="90"></div></div><span class="sk-pct">90</span></div>
+      <div class="sk-row"><span class="sk-name">Adobe Photoshop</span><div class="sk-track"><div class="sk-fill" data-w="85"></div></div><span class="sk-pct">85</span></div>
+      <div class="sk-row"><span class="sk-name">Adobe Illustrator</span><div class="sk-track"><div class="sk-fill" data-w="80"></div></div><span class="sk-pct">80</span></div>
+      <div class="sk-row"><span class="sk-name">After Effects</span><div class="sk-track"><div class="sk-fill" data-w="75"></div></div><span class="sk-pct">75</span></div>
+      <div class="sk-row"><span class="sk-name">Adobe Premiere</span><div class="sk-track"><div class="sk-fill" data-w="70"></div></div><span class="sk-pct">70</span></div>
       <div class="sk-row"><span class="sk-name">Figma / Adobe XD</span><div class="sk-track"><div class="sk-fill" data-w="80"></div></div><span class="sk-pct">80</span></div>
-      <div class="sk-row"><span class="sk-name">Autodesk Maya</span><div class="sk-track"><div class="sk-fill" data-w="70"></div></div><span class="sk-pct">70</span></div>
-      <div class="sk-row"><span class="sk-name">Nuke</span><div class="sk-track"><div class="sk-fill" data-w="50"></div></div><span class="sk-pct">50</span></div>
-
+      <div class="sk-row"><span class="sk-name">Autodesk Maya</span><div class="sk-track"><div class="sk-fill" data-w="60"></div></div><span class="sk-pct">60</span></div>
+      <div class="sk-row"><span class="sk-name">Nuke</span><div class="sk-track"><div class="sk-fill" data-w="40"></div></div><span class="sk-pct">40</span></div>
       <div class="sk-head" style="margin-top:2rem">Гадаад хэл</div>
-      <div class="sk-row"><span class="sk-name">Англи (Intermediate)</span><div class="sk-track"><div class="sk-fill" data-w="65"></div></div><span class="sk-pct" style="width:50px;font-size:9px">Ахисан дунд</span></div>
-      <div class="sk-row"><span class="sk-name">Япон (Basic)</span><div class="sk-track"><div class="sk-fill" data-w="20"></div></div><span class="sk-pct" style="width:50px;font-size:9px">Суурь</span></div>
+      <div class="sk-row"><span class="sk-name">Англи</span><div class="sk-track"><div class="sk-fill" data-w="70"></div></div><span class="sk-pct" style="width:60px;font-size:9px">Ахисан дунд</span></div>
+      <div class="sk-row"><span class="sk-name">Япон</span><div class="sk-track"><div class="sk-fill" data-w="20"></div></div><span class="sk-pct" style="width:60px;font-size:9px">Суурь</span></div>
     </div>
-
     <div>
       <div class="sk-head">Мэргэжлийн ур чадвар</div>
       <div class="tags-cloud">
-        <span class="tag">3D Modeling</span>
-        <span class="tag">3D Animation</span>
-        <span class="tag">3D Rigging</span>
-        <span class="tag">Rotoscoping</span>
-        <span class="tag">VFX Compositing</span>
-        <span class="tag">Motion Tracking</span>
-        <span class="tag">Previz</span>
-        <span class="tag">Character Design</span>
-        <span class="tag">Brand Identity</span>
-        <span class="tag">UI / UX Design</span>
-        <span class="tag">Motion Graphics</span>
-        <span class="tag">Editorial Design</span>
-        <span class="tag">2D Game Art</span>
-        <span class="tag">Infographic</span>
-        <span class="tag">Low Poly</span>
-        <span class="tag">Package Design</span>
+        <span class="tag">3D Modeling</span><span class="tag">3D Animation</span><span class="tag">3D Rigging</span>
+        <span class="tag">Rotoscoping</span><span class="tag">VFX Compositing</span><span class="tag">Motion Tracking</span>
+        <span class="tag">Previz</span><span class="tag">Character Design</span><span class="tag">Brand Identity</span>
+        <span class="tag">UI / UX Design</span><span class="tag">Motion Graphics</span><span class="tag">Editorial Design</span>
+        <span class="tag">2D Game Art</span><span class="tag">Infographic</span><span class="tag">Low Poly</span><span class="tag">Package Design</span>
       </div>
-
       <div class="sk-head" style="margin-top:2.5rem">Хувийн чадварууд</div>
       <div class="tags-cloud">
-        <span class="tag">Багаар ажиллах</span>
-        <span class="tag">Хувийн сахилга бат</span>
-        <span class="tag">Дасан зохицох</span>
-        <span class="tag">Цагийн менежмент</span>
-        <span class="tag">Логик сэтгэлгээ</span>
-        <span class="tag">Асуудал шийдвэрлэх</span>
+        <span class="tag">Багаар ажиллах</span><span class="tag">Хувийн сахилга бат</span>
+        <span class="tag">Дасан зохицох</span><span class="tag">Цагийн менежмент</span>
+        <span class="tag">Логик сэтгэлгээ</span><span class="tag">Асуудал шийдвэрлэх</span>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ══════════════════════════════════
-     ABOUT
-══════════════════════════════════ -->
+<!-- ══ ABOUT ══ -->
 <section id="about">
   <div class="sec-label">04 — Миний тухай</div>
   <div class="about-grid">
-
     <div class="about-photo fi">
-      <!--★ Зурагтай болгох:
-      <img src="images/photo.jpg" alt="Munkh-Erdene" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0">
-      -->
       <div class="about-photo-ph">Таны<br>зураг<br>энд</div>
     </div>
-
     <div>
       <h2 class="sec-title fi" style="margin-bottom:1.5rem">Баттогтох<br>Мөнх-Эрдэнэ</h2>
-
-      <p class="about-p fi">
-        <strong>График дизайнер, 3D урлагч, VFX artist</strong> — гурван чиглэлийг нэгтгэн ажилладаг Монгол бүтээлч. Одоогоор <strong>Тэтра Эф Экс</strong> компанид Видео Графикч/3D Дизайнерээр ажиллаж байна.
-      </p>
-      <p class="about-p fi">
-        Монгол соёл, тоглоом, анимейшн, кинонд гүн сонирхолтой бөгөөд энэ сонирхол нь бүтээлийн <strong>өвөрмөц хэв маяг</strong>-ийг бий болгодог. Brandbook дизайнаас эхлээд кино, TVC-ийн VFX production хүртэл өргөн туршлагатай.
-      </p>
-      <p class="about-p fi">
-        <strong>Хүрээ МХТДС</strong>-г 3.6 голчтойгоор төгсөж, дипломын ажлаараа "Дөл" нэртэй 3D дүрийн дизайн хийсэн.
-      </p>
-
+      <p class="about-p fi"><strong>График дизайнер, 3D artist, VFX artist</strong> — гурван чиглэлийг нэгтгэн ажилладаг сурах хүсэл эрмэлзэл дүүрэн Монгол бүтээлч.</p>
+      <p class="about-p fi">Монгол соёл, тоглоом, анимейшн, кинонд гүн сонирхолтой бөгөөд энэ сонирхол нь бүтээлийн <strong>өвөрмөц хэв маяг</strong>-ийг бий болгодог.</p>
+      <p class="about-p fi"><strong>Хүрээ МХТДС</strong>-г 3.6 голчтойгоор төгсөж, дипломын ажлаараа "Дөл" нэртэй 3D дүрийн дизайн хийсэн.</p>
       <div class="stats fi">
-        <div class="stat">
-          <div class="stat-n">12+</div>
-          <div class="stat-l">Арилжааны төсөл</div>
-        </div>
-        <div class="stat">
-          <div class="stat-n">8</div>
-          <div class="stat-l">Програм хангамж</div>
-        </div>
-        <div class="stat">
-          <div class="stat-n">3.6</div>
-          <div class="stat-l">GPA</div>
-        </div>
+        <div class="stat"><div class="stat-n">12+</div><div class="stat-l">Арилжааны төсөл</div></div>
+        <div class="stat"><div class="stat-n">8</div><div class="stat-l">Програм хангамж</div></div>
+        <div class="stat"><div class="stat-n">3.6</div><div class="stat-l">GPA</div></div>
       </div>
     </div>
   </div>
-
-  <!-- TIMELINE -->
-  <div class="tl" id="timeline">
+  <div class="tl">
     <div class="tl-item fi">
       <div class="tl-period">2025.07 — Одоо · 11 сар</div>
       <div class="tl-title">Видео Графикч / 3D Дизайнер</div>
       <div class="tl-org">Тэтра Эф Экс</div>
-      <div class="tl-desc">Rio Tinto "Хийморьтой Наадам" TVC, Teso Properties "Монгол Наадам" TVC, Champ Syrup cartoon panda дүр, Tobibi character modeling болон бусад олон бүтээл. Rotoscoping, VFX compositing, 3D modeling, previz.</div>
+      <div class="tl-desc">Rio Tinto TVC, Teso Properties TVC, Champ Syrup panda дүр, Tobibi character modeling болон бусад. Rotoscoping, VFX compositing, 3D modeling, previz.</div>
     </div>
     <div class="tl-item fi">
       <div class="tl-period">2024 — 2025 · Дадлага</div>
       <div class="tl-title">VFX Artist Intern</div>
       <div class="tl-org">Тэтра Эф Экс</div>
-      <div class="tl-desc">Цөвүүн Цаг МУСК, Халуун Бороо МУСК зэрэг кинонуудын post-production хэсэгт Rotoscoping ажилбард оролцсон.</div>
+      <div class="tl-desc">Цөвүүн Цаг, Халуун Бороо, Pearl of Taiga кинонуудын post-production.</div>
     </div>
     <div class="tl-item fi">
       <div class="tl-period">2022 — 2025</div>
@@ -693,109 +133,53 @@ footer {
       <div class="tl-org">Хүрээ Мэдээлэл Холбоо Технологийн Дээд Сургууль</div>
       <div class="tl-desc">GPA 3.6. Дипломын ажил: "Дөл" — 3D дүрийн дизайн болон анимейшн.</div>
     </div>
-    <div class="tl-item fi">
-      <div class="tl-period">2008 — 2020</div>
-      <div class="tl-title">Бүрэн дунд боловсрол</div>
-      <div class="tl-org">Дархан-Уул Аймгийн ЕБС 15-р сургууль</div>
-      <div class="tl-desc">A голч.</div>
-    </div>
   </div>
 </section>
 
-<!-- ══════════════════════════════════
-     CONTACT
-══════════════════════════════════ -->
+<!-- ══ CONTACT ══ -->
 <section id="contact" style="background:var(--bg-2)">
   <div class="sec-label">05 — Холбоо</div>
   <div class="contact-grid">
     <div class="fi">
-      <div class="contact-big">
-        Хамтарч<br>ажиллацгаая,<br><em>яриа эхлүүлэхэд</em><br>л хангалттай.
-      </div>
+      <div class="contact-big">Хамтарч<br>ажиллахыг хүсвэл,<br><em>холбоо барихад</em><br>л хангалттай.</div>
     </div>
     <div class="c-links fi">
-      <a href="mailto:munkhuu935@gmail.com" class="c-link">
-        <span class="c-link-key">Email</span>
-        <span class="c-link-val">munkhuu935@gmail.com</span>
-      </a>
-      <a href="tel:+97695638391" class="c-link">
-        <span class="c-link-key">Phone</span>
-        <span class="c-link-val">+976 9563 8391</span>
-      </a>
-      <a href="https://www.behance.net/kubiloe" target="_blank" class="c-link">
-        <span class="c-link-key">Behance</span>
-        <span class="c-link-val">kubiloe</span>
-      </a>
-      <a href="#" class="c-link">
-        <span class="c-link-key">Location</span>
-        <span class="c-link-val">Сүхбаатар дүүрэг, Улаанбаатар</span>
-      </a>
+      <a href="mailto:munkhuu935@gmail.com" class="c-link"><span class="c-link-key">Email</span><span class="c-link-val">munkhuu935@gmail.com</span></a>
+      <a href="tel:+97695638391" class="c-link"><span class="c-link-key">Phone</span><span class="c-link-val">+976 9563 8391</span></a>
+      <a href="https://www.behance.net/kubiloe" target="_blank" class="c-link"><span class="c-link-key">Behance</span><span class="c-link-val">kubiloe</span></a>
+      <a href="#" class="c-link"><span class="c-link-key">Location</span><span class="c-link-val">Сүхбаатар дүүрэг, Улаанбаатар</span></a>
     </div>
   </div>
 </section>
 
-<!-- ══════════════════════════════════
-     FOOTER
-══════════════════════════════════ -->
 <footer>
-  <span class="ft">© 2025 Баттогтох Мөнх-Эрдэнэ</span>
+  <span class="ft">© 2026 Баттогтох Мөнх-Эрдэнэ</span>
   <span class="ft">3D Artist · VFX Artist · Graphic Designer</span>
 </footer>
 
-<!-- ══════════════════════════════════
-     SCRIPTS
-══════════════════════════════════ -->
-<script>
-/* ── Project filter ── */
-document.querySelectorAll('.fbtn').forEach(btn => {
-  btn.addEventListener('click', () => {
-    document.querySelectorAll('.fbtn').forEach(b => b.classList.remove('on'));
-    btn.classList.add('on');
-    const f = btn.dataset.f;
-    document.querySelectorAll('#pgrid .card').forEach(c => {
-      c.classList.toggle('hide', f !== 'all' && c.dataset.c !== f);
-    });
-  });
-});
+<!-- ══ MODAL ══ -->
+<div class="modal-wrap" id="modal" role="dialog" aria-modal="true">
+  <div class="modal-box" id="modal-box">
+    <div class="modal-topbar">
+      <button class="modal-back" id="modal-close">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M10 12L6 8l4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        Буцах
+      </button>
+      <div class="modal-nav-btns">
+        <button class="modal-nav-btn" id="modal-prev">‹</button>
+        <button class="modal-nav-btn" id="modal-next">›</button>
+      </div>
+    </div>
+    <div class="modal-hero" id="modal-hero"></div>
+    <div class="modal-content">
+      <div class="modal-cat" id="modal-cat"></div>
+      <h2 class="modal-title" id="modal-title"></h2>
+      <div class="modal-meta" id="modal-meta"></div>
+      <div id="modal-body-content"></div>
+    </div>
+  </div>
+</div>
 
-/* ── Scroll fade-in + skill bars ── */
-const io = new IntersectionObserver(entries => {
-  entries.forEach(e => {
-    if (!e.isIntersecting) return;
-    e.target.classList.add('on');
-    e.target.querySelectorAll('.sk-fill').forEach(b => {
-      setTimeout(() => { b.style.width = b.dataset.w + '%'; }, 250);
-    });
-    io.unobserve(e.target);
-  });
-}, { threshold: 0.1 });
-
-document.querySelectorAll('.fi').forEach(el => io.observe(el));
-
-/* ── Project card 3D tilt ── */
-document.querySelectorAll('.card').forEach(card => {
-  card.addEventListener('mousemove', e => {
-    const r = card.getBoundingClientRect();
-    const x = ((e.clientX - r.left) / r.width  - .5) * 6;
-    const y = ((e.clientY - r.top)  / r.height - .5) * 6;
-    card.style.transform = `perspective(900px) rotateY(${x}deg) rotateX(${-y}deg)`;
-  });
-  card.addEventListener('mouseleave', () => { card.style.transform = ''; });
-});
-
-/* ── Smooth nav highlight ── */
-const sections = document.querySelectorAll('section[id]');
-const navLinks = document.querySelectorAll('.nav-links a');
-window.addEventListener('scroll', () => {
-  let cur = '';
-  sections.forEach(s => {
-    if (window.scrollY >= s.offsetTop - 120) cur = s.id;
-  });
-  navLinks.forEach(a => {
-    a.style.color = a.getAttribute('href') === '#' + cur
-      ? 'var(--text)' : '';
-  });
-}, { passive: true });
-</script>
+<script src="script.js"></script>
 </body>
 </html>
