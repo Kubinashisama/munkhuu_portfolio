@@ -273,13 +273,13 @@
     "group": "collab"
   },
   {
-    "id": "Tobibi-font",
+    "id": "tobibi-font",
     "category": "typography",
     "layout": "normal",
-    "img": "images/Tobibi_Font/Tobibi_font_cover.webp",
+    "img": "images/Tobibi_Font/Tobibi_font.webp",
     "imgPos": "center",
     "cat": "Typography · Typeface",
-    "name": "Tobibi Handwriting",
+    "name": "Tobibi Handwriting Font",
     "desc": "Тобиби анимейшнд зориулсан гар бичмэлийг дижитал хувилбарт шилжүүлсэн.",
     "tags": [
       "Photoshop",

@@ -105,7 +105,7 @@
     "note": null,
     "heroGrad": "g-pokecity",
     "heroImg": null,
-    "heroVideo": "video/Pokecity.mp4",
+    "heroVideo": "https://res.cloudinary.com/dfruixbep/video/upload/v1781522969/Pokecity2_e4yoea.mp4",
     "heroHeight": "540px"
   },
 
@@ -150,7 +150,7 @@
     "note": null,
     "heroGrad": "g-anubis",
     "heroImg": null,
-    "heroVideo": "video/Anubis.mp4",
+    "heroVideo": "https://res.cloudinary.com/dfruixbep/video/upload/v1781523142/Anubis2_mdneeb.mp4",
     "heroHeight": "540px"
   },
 
@@ -483,9 +483,9 @@
     "cols": 3,
     "note": null,
     "heroGrad": "g-nomads",
-    "heroImg": "images/backpack-battle-hero.jpg",
-    "heroVideo": null,
-    "heroHeight": "480px"
+    "heroImg": null,
+    "heroVideo": "https://res.cloudinary.com/dfruixbep/video/upload/v1781515183/BPB_awbmne.mp4",
+    "heroHeight": "100%"
   },
 
   "poster": {
@@ -505,25 +505,6 @@
     "heroImg": "images/Inbreeding/Inbreeding.webp",
     "heroVideo": null,
     "heroHeight": "650px"
-  },
-
-  "christmas": {
-    "id": "christmas",
-    "overview": "Хүүхдийн cartoon-ийн Tobibi дүрийн 3D character modeling.",
-    "process": "Cartoon-ийн 2D reference-аас 3D хэлбэр бий болгосон. Smooth shading болон toon look хадгалсан.",
-    "gallery": [
-      {
-        "src": "images/Tobibi.webp",
-        "ph": "Final model",
-        "ratio": "4/3"
-      }
-    ],
-    "cols": 3,
-    "note": null,
-    "heroGrad": "g-tobi",
-    "heroImg": "images/Tobibi.webp",
-    "heroVideo": null,
-    "heroHeight": "480px"
   },
 
   "tsuvuun": {
@@ -708,7 +689,7 @@
     "cols": 3,
     "note": null,
     "heroGrad": "g-teso-naadam",
-    "heroImg": "images/Teso/cover.webp",
+    "heroImg": "images/Teso/Cover.webp",
     "heroVideo": "https://www.facebook.com/reel/1053210390328585",
     "heroHeight": "480px"
   },
@@ -808,42 +789,76 @@
     "process": "Avengers киноны logo-ноос санаа авч serif font-ыг шүд хэлбэртэй болгох замаар хийсэн. Adobe Illustrator дээр vector зурж Fontlab ашиглан хийсэн.",
     "gallery": [
       {
-        "src": "images/brand/logo.jpg",
-        "ph": "Primary logo",
-        "ratio": "4/3"
+        "src": "images/Tobibi_Font/Thumb_1.webp",
+        "ph": "Thumb 1",
+        "ratio": "4/3",
+        "fit":"contain"
       },
       {
-        "src": "images/brand/clearspace.jpg",
-        "ph": "Clearspace",
-        "ratio": "4/3"
+        "src": "images/Tobibi_Font/Thumb_2.webp",
+        "ph": "Thumb 2",
+        "ratio": "4/3",
+        "fit":"contain"
       },
       {
-        "src": "images/brand/symbols.jpg",
-        "ph": "Symbols",
-        "ratio": "4/3"
+        "src": "images/Tobibi_Font/Thumb_3.webp",
+        "ph": "Thumb 3",
+        "ratio": "4/3",
+        "fit":"contain"
       },
       {
-        "src": "images/brand/colors.jpg",
-        "ph": "Colors",
-        "ratio": "4/3"
-      },
-      {
-        "src": "images/brand/pattern.jpg",
-        "ph": "Pattern",
-        "ratio": "4/3"
-      },
-      {
-        "src": "images/brand/mockups.jpg",
-        "ph": "Mockups",
-        "ratio": "4/3"
+        "src": "images/Tobibi_Font/Thumb_4.webp",
+        "ph": "Thumb 4",
+        "ratio": "4/3",
+        "fit":"contain"
       }
     ],
-    "cols": 3,
+    "cols": 2,
     "note": null,
-    "heroGrad": "g-brand",
-    "heroImg": "images/Uvurkhangai_Logo.webp",
+    "heroGrad": "g-tobibi-font",
+    "heroImg": "images/Tobibi_Font/Tobibi_Font.webp",
     "heroVideo": null,
-    "heroHeight": "480px"
+    "heroHeight": "100%"
+  },
+
+  "christmas": {
+    "id": "christmas",
+    "overview": "Хүүхдийн cartoon-ийн Tobibi дүрийн 3D character modeling.",
+    "process": "Cartoon-ийн 2D reference-аас 3D хэлбэр бий болгосон. Smooth shading болон toon look хадгалсан.",
+    "gallery": [
+      {
+        "src": "images/Tobibi_Christmas/01_Solid.webp",
+        "ph": "Solid",
+        "ratio": "4/3",
+        "fit": "contain"
+      },
+      {
+        "src": "images/Tobibi_Christmas/02_Material.webp",
+        "ph": "Material",
+        "ratio": "4/3",
+        "fit": "contain"
+      },
+      {
+        "src": "images/Tobibi_Christmas/03_Render.webp",
+        "ph": "Render",
+        "ratio": "4/3",
+        "fit": "contain"
+      },
+      {
+        "src": "images/Tobibi_Christmas/04_Final.webp",
+        "ph": "Final",
+        "ratio": "4/3",
+        "fit": "contain"
+      }
+
+
+    ],
+    "cols": 1,
+    "note": null,
+    "heroGrad": "g-tobi",
+    "heroImg": null,
+    "heroVideo": "https://res.cloudinary.com/dfruixbep/video/upload/v1781522541/Tobibi_Christmas_ql0j7p.mp4",
+    "heroHeight": "540px"
   },
 
   "champ": {
