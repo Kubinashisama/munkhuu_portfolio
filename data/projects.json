@@ -1,0 +1,307 @@
+[
+  {
+    "id": "hollow",
+    "category": "3d",
+    "layout": "tall",
+    "img": "images/Hollow_Knight/00_Hollow_Knight_Poster.webp",
+    "imgPos": "center",
+    "cat": "3D Render · Fan Art",
+    "name": "Hollow Knight",
+    "desc": "Hollow Knight тоглоомын дүр болон орчныг 3D ертөнцөд амьлуулсан fanart.",
+    "tags": [
+      "Blender",
+      "Render",
+      "2026"
+    ],
+    "group": "personal"
+  },
+  {
+    "id": "lanaya",
+    "category": "3d",
+    "layout": "normal",
+    "img": "images/Templar_Assassin/Templar_Assassin.webp",
+    "imgPos": "center",
+    "cat": "3D Character · Fan Art",
+    "name": "Templar Assassin",
+    "desc": "Dota 2 тоглоомын Templar Assassin баатрын low poly fanart.",
+    "tags": [
+      "Blender",
+      "Character",
+      "2023"
+    ],
+    "group": "personal"
+  },
+  {
+    "id": "pokecity",
+    "category": "3d",
+    "layout": "normal",
+    "img": "images/Pokecity/Cover.webp",
+    "imgPos": "center",
+    "cat": "3D Environment",
+    "name": "Low Poly Pokémon City",
+    "desc": "Pokemon low poly хот — building, vegetation, isometric lighting.",
+    "tags": [
+      "Blender",
+      "Low Poly",
+      "2022"
+    ],
+    "group": "personal"
+  },
+  {
+    "id": "anubis",
+    "category": "3d",
+    "layout": "normal",
+    "img": "images/Anubis/Anubis.webp",
+    "imgPos": "center",
+    "cat": "3D Character Design",
+    "name": "Anubis 2077",
+    "desc": "Cyberpunk дэлхийд тохируулсан Anubis хуяг.",
+    "tags": [
+      "Blender",
+      "Character",
+      "2024"
+    ],
+    "group": "personal"
+  },
+  {
+    "id": "xlr8",
+    "category": "design",
+    "layout": "normal",
+    "img": "images/XLR8/XLR8_Poster.webp",
+    "imgPos": "center",
+    "cat": "2D Illustration · Fan Art",
+    "name": "XLR8 — Ben 10",
+    "desc": "Постер хэлбэрт 2D digital illustration.",
+    "tags": [
+      "Photoshop",
+      "Illustration",
+      "2022"
+    ],
+    "group": "personal"
+  },
+  {
+    "id": "brand",
+    "category": "design",
+    "layout": "normal",
+    "img": "images/Uvurkhangai/Uvurkhangai_Logo.webp",
+    "imgPos": "center",
+    "cat": "Brand Identity",
+    "name": "Өвөрхангай Аймаг Brandbook",
+    "desc": "Бүрэн брэнд систем — лого, өнгийн палитр, typography, pattern.",
+    "tags": [
+      "Adobe Illustrator",
+      "Brand Identity",
+      "2023"
+    ],
+    "group": "personal"
+  },
+  {
+    "id": "vamp",
+    "category": "typography",
+    "layout": "normal",
+    "img": "images/Vampiric_font/Vampiric_font_cover.webp",
+    "imgPos": "center",
+    "cat": "Typography · Typeface",
+    "name": "Vampiric Typeface",
+    "desc": "Вамфирийн шүднээс санаа авж хийсэн фонт.",
+    "tags": [
+      "Photoshop",
+      "Illustration",
+      "2022"
+    ],
+    "group": "personal"
+  },
+  {
+    "id": "esports",
+    "category": "design",
+    "layout": "tall",
+    "img": "images/Esport/E-Sport Infographic.webp",
+    "imgPos": "center top",
+    "cat": "Infographic Design",
+    "name": "Монголын Цахим Спорт",
+    "desc": "Монгол e-sports ололт амжилтуудын data visualization.",
+    "tags": [
+      "Illustrator",
+      "Infographic",
+      "2023"
+    ],
+    "group": "personal"
+  },
+  {
+    "id": "nomads",
+    "category": "design",
+    "layout": "normal",
+    "img": "Images_Large/bpb.png",
+    "imgPos": "center",
+    "cat": "Game UI / UX Design",
+    "name": "Backpack Battle: Nomads",
+    "desc": "18 дэлгэц, нэгдмэл visual language, монгол өнгийн палитр.",
+    "tags": [
+      "Figma",
+      "Game UI",
+      "2022"
+    ],
+    "group": "personal"
+  },
+  {
+    "id": "poster",
+    "category": "design",
+    "layout": "normal",
+    "img": "images/Inbreeding/Inbreeding.webp",
+    "imgPos": "center",
+    "cat": "Editorial Design",
+    "name": "Цус Ойртолт",
+    "desc": "Цусан хамаатны харилцааны тухай editorial постер.",
+    "tags": [
+      "Photoshop",
+      "Typography",
+      "2023"
+    ],
+    "group": "personal"
+  },
+  {
+    "id": "tsuvuun",
+    "category": "vfx",
+    "layout": "tall",
+    "img": "images/Tsuvuun_tsag/Tsuvuun_tsag.webp",
+    "imgPos": "center",
+    "cat": "VFX · Rotoscoping",
+    "name": "Цөвүүн Цаг МУСК",
+    "desc": "Монгол кино — post-production rotoscoping.",
+    "tags": [
+      "After Effects",
+      "Rotoscoping",
+      "2024"
+    ],
+    "group": "collab"
+  },
+  {
+    "id": "rio-naadam",
+    "category": "vfx",
+    "layout": "wide",
+    "img": "images/Rio/Cover.webp",
+    "imgPos": "center",
+    "cat": "VFX · Rotoscoping",
+    "name": "Хийморьтой Наадам TVC",
+    "desc": "Rio Tinto Naadam 2025-ын post-production үйл явцад rotoscoping чиглэлд оролцсон.",
+    "tags": [
+      "After Effects",
+      "Rotoscoping",
+      "2025"
+    ],
+    "group": "collab"
+  },
+  {
+    "id": "haluun",
+    "category": "vfx",
+    "layout": "tall",
+    "img": "images/Haluun_boroo/Haluun_boroo.webp",
+    "imgPos": "center",
+    "cat": "VFX · Rotoscoping",
+    "name": "Халуун Бороо МУСК",
+    "desc": "Монгол кино — post-production rotoscoping.",
+    "tags": [
+      "After Effects",
+      "Rotoscoping",
+      "2024"
+    ],
+    "group": "collab"
+  },
+  {
+    "id": "teso-naadam",
+    "category": "vfx",
+    "layout": "normal",
+    "img": "images/Teso/Cover.webp",
+    "imgPos": "center",
+    "cat": "VFX · Rotoscoping",
+    "name": "Өв соёл эрхэм Наадам TVC",
+    "desc": "Teso Naadam 2025-ын post-production үйл явцад rotoscoping чиглэлд оролцсон.",
+    "tags": [
+      "After Effects",
+      "Rotoscoping",
+      "2025"
+    ],
+    "group": "collab"
+  },
+  {
+    "id": "buff",
+    "category": "vfx",
+    "layout": "normal",
+    "img": "images/Buff/Cover.webp",
+    "imgPos": "center",
+    "cat": "VFX · Rotoscoping",
+    "name": "Buff Energy Drink",
+    "desc": "Buff Energy Drink-ын ТVC бичлэгт Previz, Motion Graphics, SFX ажилбаруудад оролцсон.",
+    "tags": [
+      "After Effects",
+      "Rotoscoping",
+      "2024"
+    ],
+    "group": "collab"
+  },
+  {
+    "id": "taiga",
+    "category": "vfx",
+    "layout": "normal",
+    "img": "images/Taiga/Cover.webp",
+    "imgPos": "center",
+    "cat": "VFX · Rotoscoping/Compositing",
+    "name": "Pearl of the Taiga",
+    "desc": "Pearl of the Taiga усны TVC бичлэнт rotoscoping болон compositing ажилбарт оролцсон.",
+    "tags": [
+      "After Effects",
+      "Nuke",
+      "Rotoscoping",
+      "2025"
+    ],
+    "group": "collab"
+  },
+  {
+    "id": "christmas",
+    "category": "3d",
+    "layout": "normal",
+    "img": "images/Tobibi_Christmas/Tobibi_Christmas.webp",
+    "imgPos": "center",
+    "cat": "Character Modeling",
+    "name": "Tobibi — Character",
+    "desc": "Хүүхдийн cartoon дүрийн 3D character modeling.",
+    "tags": [
+      "Blender",
+      "Character",
+      "2025"
+    ],
+    "group": "collab"
+  },
+  {
+    "id": "Tobibi-font",
+    "category": "typography",
+    "layout": "normal",
+    "img": "images/Tobibi_Font/Tobibi_font_cover.webp",
+    "imgPos": "center",
+    "cat": "Typography · Typeface",
+    "name": "Tobibi Handwriting",
+    "desc": "Тобиби анимейшнд зориулсан гар бичмэлийг дижитал хувилбарт шилжүүлсэн.",
+    "tags": [
+      "Photoshop",
+      "Illustration",
+      "2022"
+    ],
+    "group": "collab"
+  },
+  {
+    "id": "champ",
+    "category": "3d",
+    "layout": "normal",
+    "img": "images/Champ/Panda.webp",
+    "imgPos": "center",
+    "cat": "Commercial · Character Design",
+    "name": "Champ — Panda Mascot",
+    "desc": "Хүүхдийн ханиадны syrup-ийн брэндийн дүр.",
+    "tags": [
+      "Blender",
+      "Commercial",
+      "2025"
+    ],
+    "group": "collab"
+  }
+]
