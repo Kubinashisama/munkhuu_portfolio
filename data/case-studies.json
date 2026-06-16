@@ -590,28 +590,28 @@
     "process": "Морины нуруунд шинэ объект нэмэх, морьтой хүмүүсийн ард аянга цахилгаан нэмэх шаардлага гарсан тул тэдгээрийг арын дүрснээс салгах ажил хийсэн. Нийт ажилласан дүрс:5",
     "gallery": [
       {
-        "src": "images/rio/Scene_1.webp",
+        "src": "images/Rio/Scene_1.webp",
         "ph": "Scene 1",
         "ratio": "16/9",
         "fit": "contain"
       },
 
       {
-        "src": "images/rio/Scene_2.webp",
+        "src": "images/Rio/Scene_2.webp",
         "ph": "Scene 2",
         "ratio": "16/9",
         "fit": "contain"
       },
 
       { 
-        "src": "images/rio/Scene_3.webp",
+        "src": "images/Rio/Scene_3.webp",
         "ph": "Scene 3",
         "ratio": "16/9",
         "fit": "contain"
       },
 
       {
-        "src": "images/rio/Scene_4.webp",
+        "src": "images/Rio/Scene_4.webp",
         "ph": "Scene 4",
         "ratio": "16/9",
         "fit": "contain"
