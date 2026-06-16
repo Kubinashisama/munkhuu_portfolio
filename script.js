@@ -131,7 +131,7 @@ function renderModal(idx) {
       heroHTML = `<video src="${cs.heroVideo}" autoplay muted loop playsinline
         style="
         width:100%;
-        height:80%;
+        height:100%;
         object-fit:cover;
         display:block"></video>`;
       mHero.style.height = cs.heroHeight || '480px';
