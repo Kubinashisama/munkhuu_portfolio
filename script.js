@@ -1,6 +1,5 @@
 // ── Portfolio Script ──
 
-
 // Globals
 let projects    = [];   // data/projects.json     — card/grid өгөгдөл
 let caseStudies = {};   // data/case-studies.json — modal дэлгэрэнгүй
