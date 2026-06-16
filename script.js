@@ -1,5 +1,6 @@
 // ── Portfolio Script ──
 
+
 // Globals
 let projects    = [];   // data/projects.json     — card/grid өгөгдөл
 let caseStudies = {};   // data/case-studies.json — modal дэлгэрэнгүй
@@ -130,7 +131,7 @@ function renderModal(idx) {
       heroHTML = `<video src="${cs.heroVideo}" autoplay muted loop playsinline
         style="
         width:100%;
-        height:100%;
+        height:80%;
         object-fit:cover;
         display:block"></video>`;
       mHero.style.height = cs.heroHeight || '480px';
@@ -180,7 +181,9 @@ function renderModal(idx) {
     html += '</div>';
   }
 
+ if (cs.process) {
   html += `<div class="modal-section"><h3>Үйл явц</h3><p>${cs.process.replace(/\n/g, '<br>')}</p></div>`;
+}
   if (cs.note) html += `<div style="padding:16px;border:0.5px dashed rgba(201,169,110,.3);border-radius:4px;font-size:12px;color:var(--text-dim);margin-bottom:28px">${cs.note}</div>`;
 
   mBody.innerHTML = html;

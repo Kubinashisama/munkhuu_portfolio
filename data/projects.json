@@ -53,13 +53,13 @@
     "layout": "normal",
     "img": "images/Anubis/Anubis.webp",
     "imgPos": "center",
-    "cat": "3D Character Design",
+    "cat": "Character Animation",
     "name": "Anubis 2077",
     "desc": "Cyberpunk хотын орчин хийж дүр хөлөлгөх дадлага.",
     "tags": [
       "Blender",
       "Character",
-      "2024"
+      "2023"
     ],
     "group": "personal"
   },
@@ -171,7 +171,7 @@
     "tags": [
       "After Effects",
       "Rotoscoping",
-      "2024"
+      "2025"
     ],
     "group": "collab"
   },
@@ -182,8 +182,8 @@
     "img": "images/Rio/Cover.webp",
     "imgPos": "center",
     "cat": "VFX · Rotoscoping",
-    "name": "Хийморьтой Наадам TVC",
-    "desc": "Rio Tinto Naadam 2025-ын post-production үйл явцад rotoscoping ажилбарт оролцсон.",
+    "name": "Хийморьтой Наадам",
+    "desc": "Rio Tinto 2025 оны наадмын ТVC бичлэгний post-production үйл явцад rotoscoping ажилбараар оролцсон.",
     "tags": [
       "After Effects",
       "Rotoscoping",
@@ -199,11 +199,11 @@
     "imgPos": "center",
     "cat": "VFX · Rotoscoping",
     "name": "Халуун Бороо МУСК",
-    "desc": "Монгол кино — post-production rotoscoping ажилбарт оролцсон.",
+    "desc": "Халуун Бороо МУСК-ны post-production үйл явцад rotoscoping ажилбараар оролцсон.",
     "tags": [
       "After Effects",
       "Rotoscoping",
-      "2024"
+      "2025"
     ],
     "group": "collab"
   },
@@ -213,9 +213,9 @@
     "layout": "normal",
     "img": "images/Teso/Cover.webp",
     "imgPos": "center",
-    "cat": "VFX · Rotoscoping",
-    "name": "Өв соёл эрхэм Наадам TVC",
-    "desc": "Teso Naadam 2025-ын post-production үйл явцад rotoscoping болон composition ажилбарт оролцсон.",
+    "cat": "VFX · Rotoscoping/Compositing",
+    "name": "Өв Соёл Эрхэм",
+    "desc": "Teso Properties 2025 оны наадмын ТVC бичлэгний post-production үйл явцад rotoscoping болон composition ажилбараар оролцсон.",
     "tags": [
       "After Effects",
       "Rotoscoping",
@@ -229,13 +229,14 @@
     "layout": "normal",
     "img": "images/Buff/Cover.webp",
     "imgPos": "center",
-    "cat": "VFX · Rotoscoping",
+    "cat": "Motion Graphics/SFX",
     "name": "Buff Energy Drink",
     "desc": "Buff Energy Drink-ын ТVC бичлэгт Previz, Motion Graphics, SFX ажилбаруудад оролцсон.",
     "tags": [
-      "After Effects",
-      "Rotoscoping",
-      "2024"
+      "Premiere Pro",
+      "Blender",
+      "Motion Graphics",
+      "2025:"
     ],
     "group": "collab"
   },
@@ -246,8 +247,8 @@
     "img": "images/Taiga/Cover.webp",
     "imgPos": "center",
     "cat": "VFX · Rotoscoping/Compositing",
-    "name": "Pearl of the Taiga",
-    "desc": "Pearl on the Taiga усны TVC бичлэнт rotoscoping болон compositing ажилбарт оролцсон.",
+    "name": "Pearl on the Taiga",
+    "desc": "Pearl on the Taiga цэвэр усны TVC бичлэгт rotoscoping болон compositing ажилбарт оролцсон.",
     "tags": [
       "After Effects",
       "Nuke",
@@ -282,9 +283,9 @@
     "name": "Tobibi Handwriting Font",
     "desc": "Тобиби анимейшнд зориулсан гар бичмэлийг дижитал хувилбарт шилжүүлсэн.",
     "tags": [
-      "Photoshop",
+      "Fontlab",
       "Illustration",
-      "2022"
+      "2025"
     ],
     "group": "collab"
   },
